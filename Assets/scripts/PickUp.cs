@@ -2,7 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(SteamVR_TrackedObject))]
-public class PickUpParent : MonoBehaviour {
+public class PickUp : MonoBehaviour {
 	//public Rigidbody rigidAttachedPoint;
 	public GameObject sphere;
 
