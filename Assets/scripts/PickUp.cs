@@ -27,6 +27,7 @@ public class PickUp : MonoBehaviour {
 
 	void OnTriggerStay(Collider col){
 		if (fixedJoint == null && device.GetTouch (SteamVR_Controller.ButtonMask.Trigger)) {
+			Debug.Log ("Get Touched!\n");
 			fixedJoint = col.gameObject.AddComponent<FixedJoint> ();
 			fixedJoint.connectedBody = this.GetComponent<Rigidbody> ();
 		} else if(fixedJoint != null && device.GetTouchUp(SteamVR_Controller.ButtonMask.Trigger)){
@@ -34,6 +35,7 @@ public class PickUp : MonoBehaviour {
 			Rigidbody rigidBody = go.GetComponent<Rigidbody> ();
 			Object.Destroy (fixedJoint);
 			fixedJoint = null;
+			Debug.Log ("Get Touch Up!\n");
 			tossObject (rigidBody);
 		}
 	}
