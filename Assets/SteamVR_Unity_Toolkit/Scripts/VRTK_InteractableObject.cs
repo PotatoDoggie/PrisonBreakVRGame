@@ -151,11 +151,16 @@ namespace VRTK
                 InteractableObjectUngrabbed(this, e);
             }
         }
-
+        public GameObject bdg;
         public virtual void OnInteractableObjectUsed(InteractableObjectEventArgs e)
         {
             if (InteractableObjectUsed != null)
             {
+                Debug.Log(this.name + " is used in OnInteractableObjUsed");
+                Vector3 newPosition = bdg.transform.position;
+
+                bdg.transform.position =new Vector3(0,newPosition.y,newPosition.z);
+
                 InteractableObjectUsed(this, e);
             }
         }
