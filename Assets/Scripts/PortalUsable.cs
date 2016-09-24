@@ -13,8 +13,11 @@ public class PortalUsable : VRTK_InteractableObject
         Debug.Log(this.name + " is used in OnInteractableObjUsed");
         Debug.Log(usingObject.name+"is using");
         Vector3 newPosition = exit.transform.position;
-        usingObject.transform.parent.position = newPosition;
-        Debug.Log(usingObject.transform.parent.name);
+        GameObject player = GameObject.Find("[CameraRig]");
+        player.transform.position = newPosition;
+        Rigidbody rb = player.GetComponent<Rigidbody>();
+        rb.velocity += new Vector3(0.0f, 0.0001f,0.0f);
+        Debug.Log(player.name);
     }
 
     protected override void Start()
