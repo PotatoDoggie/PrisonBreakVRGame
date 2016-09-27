@@ -25,7 +25,7 @@
             Debug.Log("text show up");
             GameObject winText =  GameObject.Find("WinText");
             winText.GetComponent<Renderer>().enabled = true;
-            winText.SetActive(true);
+            //winText.SetActive(true);
 
         }
 
@@ -35,6 +35,9 @@
             defaultRotation = transform.eulerAngles;
             SetRotation();
             sideFlip = (flipped ? 1 : -1);
+            Debug.Log("initial wintext");
+            GameObject winText = GameObject.Find("WinText");
+            winText.GetComponent<Renderer>().enabled = false;
         }
 
         protected override void Update()
