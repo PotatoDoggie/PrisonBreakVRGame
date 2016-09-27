@@ -22,6 +22,11 @@
             SetDoorRotation(usingObject.transform.position);
             SetRotation();
             open = !open;
+            Debug.Log("text show up");
+            GameObject winText =  GameObject.Find("WinText");
+            winText.GetComponent<Renderer>().enabled = true;
+            winText.SetActive(true);
+
         }
 
         protected override void Start()
