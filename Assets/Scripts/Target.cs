@@ -19,7 +19,7 @@ public class Target : MonoBehaviour {
             {
                 Debug.Log("first trigger! this obj grow");
                 Vector3 oldPosition = bridge.transform.position;
-                bridge.transform.position = new Vector3(oldPosition.x + 2, oldPosition.y, oldPosition.z);
+                bridge.transform.position = new Vector3(oldPosition.x + 1, oldPosition.y, oldPosition.z);
                 isUsed = !isUsed;
                 Vector3 oldScale = this.transform.localScale;
                 this.transform.localScale = oldScale * factor;
@@ -28,7 +28,7 @@ public class Target : MonoBehaviour {
             {
                 Debug.Log("second trigger!");
                 Vector3 oldPosition = bridge.transform.position;
-                bridge.transform.position = new Vector3(oldPosition.x - 2, oldPosition.y, oldPosition.z);
+                bridge.transform.position = new Vector3(oldPosition.x - 1, oldPosition.y, oldPosition.z);
                 isUsed = !isUsed;
                 Vector3 oldScale = this.transform.localScale;
                 this.transform.localScale = oldScale / factor;
