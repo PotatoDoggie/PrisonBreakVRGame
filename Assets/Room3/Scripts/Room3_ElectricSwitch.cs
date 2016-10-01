@@ -50,8 +50,9 @@ public class Room3_ElectricSwitch : VRTK_InteractableObject
             Renderer[] ChildRends = cagePillars.GetComponentsInChildren<Renderer>();
             foreach (Renderer i in ChildRends)
             {
-                i.enabled = false;
+                //i.enabled = false;
             }
+            cagePillars.SetActive(false);
         }
         else
         {
@@ -59,24 +60,16 @@ public class Room3_ElectricSwitch : VRTK_InteractableObject
             Renderer[] ChildRends = cagePillars.GetComponentsInChildren<Renderer>();
             foreach (Renderer i in ChildRends)
             {
-                i.enabled = true;
+                //i.enabled = true;
             }
+            cagePillars.SetActive(true);
         }
         
     }
     //set the gameobj's transform to show the status of the switch
     private void SwitchEffect()
     {
-        if (isOn)
-        {
-            //On status
-            this.transform.Rotate(45f, 0f, 0f);
-        }
-        else
-        {
-            //off status
-            this.transform.Rotate(-45f, 0f, 0f);
-        }
+        //debug me, not imple
     }
     //set the electric lines color
     private void LinesEffect()
