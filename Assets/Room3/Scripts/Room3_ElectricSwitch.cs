@@ -12,7 +12,7 @@ public class Room3_ElectricSwitch : VRTK_InteractableObject
     protected override void Start()
     { 
         base.Start();
-        isOn = false;
+        isOn = true;
         //show cagePillars
         Renderer[] ChildRends = cagePillars.GetComponentsInChildren<Renderer>();
         foreach (Renderer i in ChildRends) {
@@ -27,7 +27,6 @@ public class Room3_ElectricSwitch : VRTK_InteractableObject
         isOn = !isOn;
         LinesEffect();
         PillarEffect();
-       
     }
 
     protected override void Update()
@@ -46,23 +45,13 @@ public class Room3_ElectricSwitch : VRTK_InteractableObject
     {
         if (isOn)
         {
-            //hide cagePillars
-            Renderer[] ChildRends = cagePillars.GetComponentsInChildren<Renderer>();
-            foreach (Renderer i in ChildRends)
-            {
-                //i.enabled = false;
-            }
-            cagePillars.SetActive(false);
+            //show cagePillars
+            cagePillars.SetActive(true);
         }
         else
         {
             //hide cagePillars
-            Renderer[] ChildRends = cagePillars.GetComponentsInChildren<Renderer>();
-            foreach (Renderer i in ChildRends)
-            {
-                //i.enabled = true;
-            }
-            cagePillars.SetActive(true);
+            cagePillars.SetActive(false);
         }
         
     }
