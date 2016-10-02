@@ -7,9 +7,9 @@ public class BrokenLine : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         repairedLine.SetActive(false);
-        GameObject[] rend = this.GetComponentsInChildren<GameObject>();
-        foreach (GameObject i in rend) {
-            i.SetActive(true);
+        Renderer[] rend = this.GetComponentsInChildren<Renderer>();
+        foreach (Renderer i in rend) {
+            i.enabled = true;
         }  
 	}
 
@@ -17,10 +17,10 @@ public class BrokenLine : MonoBehaviour {
         if (other.CompareTag("Tape"))
         {
             repairedLine.SetActive(true);
-            GameObject[] rend = this.GetComponentsInChildren<GameObject>();
-            foreach (GameObject i in rend)
+            Renderer[] rend = this.GetComponentsInChildren<Renderer>();
+            foreach (Renderer i in rend)
             {
-                i.SetActive(false);
+                i.enabled= false;
             }
         }
     }
