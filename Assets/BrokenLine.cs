@@ -7,16 +7,21 @@ public class BrokenLine : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         repairedLine.SetActive(false);
-        Renderer rend = this.GetComponent<Renderer>();
-        rend.enabled = true;
+        GameObject[] rend = this.GetComponentsInChildren<GameObject>();
+        foreach (GameObject i in rend) {
+            i.SetActive(true);
+        }  
 	}
 
     void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Tape"))
         {
             repairedLine.SetActive(true);
-            Renderer rend = this.GetComponent<Renderer>();
-            rend.enabled = false;
+            GameObject[] rend = this.GetComponentsInChildren<GameObject>();
+            foreach (GameObject i in rend)
+            {
+                i.SetActive(false);
+            }
         }
     }
 	// Update is called once per frame
