@@ -3,7 +3,7 @@ using System.Collections;
 using VRTK;
 
 public class SafeDoor_open : VRTK_InteractableObject {
-	public GameObject safedoor;
+	
 	private bool isTouched;
 
 	public override void StartUsing(GameObject usingObject) 
@@ -12,8 +12,8 @@ public class SafeDoor_open : VRTK_InteractableObject {
 		//Debug.Log(this.name + " is used in OnInteractableObjUsed");
 		if (!isTouched) {
 			//Debug.Log ("first use! this obj grow");
-			Vector3 oldPosition = safedoor.transform.position;
-			safedoor.transform.position = new Vector3 (oldPosition.x + 0.75, oldPosition.y, oldPosition.z);
+			Vector3 oldPosition = this.transform.position;
+			this.transform.position = new Vector3 (oldPosition.x + 0.75f, oldPosition.y, oldPosition.z);
 			//isTouched = !isUsed;
 
 		}
@@ -28,7 +28,7 @@ public class SafeDoor_open : VRTK_InteractableObject {
 	protected override void Start()
 	{
 		base.Start();
-		safedoor.transform.position = new Vector3((float)-0.675, (float)1.5, (float)1.2);
+		this.transform.position = new Vector3(-0.675f, 1.5f, 1.2f);
 		isTouched = false;
 
 	}
