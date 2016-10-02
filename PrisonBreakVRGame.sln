@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{D4B8A8E8-1BE4-DC3C-AEAF-15A0246705A2}") = "PrisonBreakVRGame", "Assembly-CSharp-firstpass.csproj", "{35D3546D-6343-1AD4-EB3A-647582CC931C}"
+EndProject
+Project("{D4B8A8E8-1BE4-DC3C-AEAF-15A0246705A2}") = "PrisonBreakVRGame", "Assembly-CSharp.csproj", "{1FA93CEB-2C8A-2670-DDD2-C666EDCC4829}"
+EndProject
+Project("{D4B8A8E8-1BE4-DC3C-AEAF-15A0246705A2}") = "PrisonBreakVRGame", "Assembly-CSharp-Editor.csproj", "{18D74C7C-A71F-D0D4-8830-4F65215EC74B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35D3546D-6343-1AD4-EB3A-647582CC931C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D3546D-6343-1AD4-EB3A-647582CC931C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D3546D-6343-1AD4-EB3A-647582CC931C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D3546D-6343-1AD4-EB3A-647582CC931C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA93CEB-2C8A-2670-DDD2-C666EDCC4829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA93CEB-2C8A-2670-DDD2-C666EDCC4829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA93CEB-2C8A-2670-DDD2-C666EDCC4829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA93CEB-2C8A-2670-DDD2-C666EDCC4829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D74C7C-A71F-D0D4-8830-4F65215EC74B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D74C7C-A71F-D0D4-8830-4F65215EC74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D74C7C-A71F-D0D4-8830-4F65215EC74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D74C7C-A71F-D0D4-8830-4F65215EC74B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
