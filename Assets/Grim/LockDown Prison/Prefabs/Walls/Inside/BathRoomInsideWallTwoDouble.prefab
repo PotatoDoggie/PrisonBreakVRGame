@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2333496}
   - 64: {fileID: 6433496}
   - 54: {fileID: 54000013478500816}
+  - 65: {fileID: 65000012150782528}
   m_Layer: 0
   m_Name: BathRoomInsideWallTwoDouble
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.28484, y: -3.1886148, z: -4}
+  m_LocalPosition: {x: -21.284842, y: -3.1886148, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -106,3 +107,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65000012150782528
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133496}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.335207, y: 6.1999993, z: 4}
+  m_Center: {x: 0.12499905, y: 3.0999997, z: 2}

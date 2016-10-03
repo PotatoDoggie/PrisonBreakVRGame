@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2363564}
   - 64: {fileID: 6493886}
   - 54: {fileID: 54000010363829102}
+  - 65: {fileID: 65000014160337774}
   m_Layer: 0
   m_Name: PrisonInsideWallOneDouble
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122164}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -21.05, y: -3.1886148, z: -8}
+  m_LocalPosition: {x: -18.05, y: -3.1886148, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children: []
@@ -106,3 +107,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65000014160337774
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.33520508, y: 6.2000003, z: 3}
+  m_Center: {x: 0.125, y: 3.1000001, z: 1.5}
