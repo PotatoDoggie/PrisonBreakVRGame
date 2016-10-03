@@ -1804,6 +1804,26 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -1.68
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 29a0ad65ff3d8014daba1c1f4383236c, type: 2}
+      propertyPath: m_TagString
+      value: ElectricPanelDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014144437060, guid: 29a0ad65ff3d8014daba1c1f4383236c, type: 2}
+      propertyPath: m_TagString
+      value: ScrewHead
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014026958326, guid: 29a0ad65ff3d8014daba1c1f4383236c, type: 2}
+      propertyPath: m_TagString
+      value: ScrewHead
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013168566218, guid: 29a0ad65ff3d8014daba1c1f4383236c, type: 2}
+      propertyPath: m_TagString
+      value: ScrewHead
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011406135366, guid: 29a0ad65ff3d8014daba1c1f4383236c, type: 2}
+      propertyPath: m_TagString
+      value: ScrewHead
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29a0ad65ff3d8014daba1c1f4383236c, type: 2}
   m_IsPrefabParent: 0
@@ -8035,6 +8055,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.30354062, y: 0.3157295, z: 3.0085926}
   m_Center: {x: 0.0000006854534, y: -0.000000022351742, z: 0.9944761}
+--- !u!114 &1144299885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1144299881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b03386cf88294168b9b9cbf0290b8e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &1144299887
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9700,6 +9731,17 @@ MonoBehaviour:
   allowedUseControllers: 0
   hideControllerOnUse: 0
   usingState: 0
+--- !u!114 &1257896056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1257896054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31ffc528e3f043139edbf3d0fd5a1bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1257896057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15150,6 +15192,18 @@ Prefab:
     - target: {fileID: 6478022, guid: 3f8b693777f430b4a8ecdfe2e98692d9, type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013917169404, guid: 3f8b693777f430b4a8ecdfe2e98692d9, type: 2}
+      propertyPath: m_TagString
+      value: KeyHole
+      objectReference: {fileID: 0}
+    - target: {fileID: 178020, guid: 3f8b693777f430b4a8ecdfe2e98692d9, type: 2}
+      propertyPath: m_TagString
+      value: DoorLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 178018, guid: 3f8b693777f430b4a8ecdfe2e98692d9, type: 2}
+      propertyPath: m_TagString
+      value: DoorRight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f8b693777f430b4a8ecdfe2e98692d9, type: 2}
