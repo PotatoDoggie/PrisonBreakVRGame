@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Room4/Room 4.unity
+=======
+- path: Assets/_scene/Room2.unity
+>>>>>>> b63bb73aa4df092b1fc1602698c2b0632a9ec189
   isLoaded: 1
   isActive: 1
