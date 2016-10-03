@@ -8,11 +8,6 @@ TagManager:
   - ElectricLine
   - Tape
   - Portal
-  - TeleportIgnore
-  - DoorRight
-  - DoorLeft
-  - KeyHole
-  - ScrewHead
   layers:
   - Default
   - TransparentFX
