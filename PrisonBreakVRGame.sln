@@ -7,6 +7,8 @@ Project("{D4B8A8E8-1BE4-DC3C-AEAF-15A0246705A2}") = "PrisonBreakVRGame", "Assemb
 EndProject
 Project("{D4B8A8E8-1BE4-DC3C-AEAF-15A0246705A2}") = "PrisonBreakVRGame", "Assembly-CSharp-Editor.csproj", "{18D74C7C-A71F-D0D4-8830-4F65215EC74B}"
 EndProject
+Project("{D4B8A8E8-1BE4-DC3C-AEAF-15A0246705A2}") = "PrisonBreakVRGame", "Assembly-UnityScript.unityproj", "{3A7EAC2E-D940-66B8-0A00-9FE95435484A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{18D74C7C-A71F-D0D4-8830-4F65215EC74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18D74C7C-A71F-D0D4-8830-4F65215EC74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18D74C7C-A71F-D0D4-8830-4F65215EC74B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A7EAC2E-D940-66B8-0A00-9FE95435484A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A7EAC2E-D940-66B8-0A00-9FE95435484A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A7EAC2E-D940-66B8-0A00-9FE95435484A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A7EAC2E-D940-66B8-0A00-9FE95435484A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
