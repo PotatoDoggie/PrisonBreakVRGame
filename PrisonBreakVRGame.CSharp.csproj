@@ -85,8 +85,10 @@
     <Compile Include="Assets\Scripts\BridgeSwitch.cs" />
     <Compile Include="Assets\Scripts\ExcludeTeleport.cs" />
     <Compile Include="Assets\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\Scripts\KeyController.cs" />
     <Compile Include="Assets\Scripts\Portal.cs" />
     <Compile Include="Assets\Scripts\PortalUsable.cs" />
+    <Compile Include="Assets\Scripts\ScrewDriverController.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
