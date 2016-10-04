@@ -1,25 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
+using VRTK;
 
-public class CodePadButton : MonoBehaviour {
+public class CodePadButton : VRTK_InteractableObject {
 	public CombinationShow combinationShow;
 	public GameObject[] buttons;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    protected override void Start() {
+        base.Start();
+    }
+    
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "Arrow") {
-			int color = System.Array.IndexOf (buttons, gameObject);
-			combinationShow.inputCode (color);
-			Debug.Log (color);
-		}
+		/*int color = System.Array.IndexOf (buttons, gameObject);
+		combinationShow.inputCode (color);
+		Debug.Log (color);*/
 	}
+
+
+    public override void StartUsing(GameObject usingObject) {
+        int color = System.Array.IndexOf(buttons, gameObject);
+        combinationShow.inputCode(color);
+        Debug.Log(color);
+    }
+
+
 }
