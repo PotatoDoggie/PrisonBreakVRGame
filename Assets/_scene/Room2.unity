@@ -1824,6 +1824,32 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 29a0ad65ff3d8014daba1c1f4383236c, type: 2}
   m_PrefabInternal: {fileID: 263962011}
+--- !u!1 &263962013 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011371767304, guid: 29a0ad65ff3d8014daba1c1f4383236c,
+    type: 2}
+  m_PrefabInternal: {fileID: 263962011}
+--- !u!114 &263962014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 263962013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b86803f9669aa40be161b11ec9272e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultEvents:
+    OnValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  direction: 1
+  minAngle: 0
+  maxAngle: 130
+  stepSize: 1
 --- !u!1 &270653111
 GameObject:
   m_ObjectHideFlags: 0
@@ -5905,6 +5931,7 @@ GameObject:
   - 23: {fileID: 815792516}
   - 64: {fileID: 815792515}
   - 114: {fileID: 815792518}
+  - 114: {fileID: 815792519}
   m_Layer: 19
   m_Name: DoorHandle
   m_TagString: Untagged
@@ -6019,6 +6046,27 @@ MonoBehaviour:
   allowedUseControllers: 0
   hideControllerOnUse: 0
   usingState: 0
+--- !u!114 &815792519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 815792513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b86803f9669aa40be161b11ec9272e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultEvents:
+    OnValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: VRTK.VRTK_Control+ValueChangedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  direction: 0
+  minAngle: 0
+  maxAngle: 90
+  stepSize: 1
 --- !u!1001 &835624978
 Prefab:
   m_ObjectHideFlags: 0
