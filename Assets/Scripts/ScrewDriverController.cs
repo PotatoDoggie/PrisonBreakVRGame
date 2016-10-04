@@ -18,10 +18,8 @@ public class ScrewDriverController : MonoBehaviour {
 			count++;
 			if (count >= 4) {
 				GameObject electricPanelDoor = GameObject.Find ("ElectricPanelDoor");
-				float f = 1.5f;
-				electricPanelDoor.transform.position = new Vector3(electricPanelDoor.transform.position.x, 
-					electricPanelDoor.transform.position.y - f, 
-					electricPanelDoor.transform.position.z);
+				Rigidbody rb1 = electricPanelDoor.GetComponent<Rigidbody>();
+				rb1.isKinematic = false;
 			}
 		}
 	}
