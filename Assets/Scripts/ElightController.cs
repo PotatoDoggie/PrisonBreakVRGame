@@ -6,9 +6,10 @@
     {
         public ElectricalLeverReactor eReactor;
         public TapeController tape;
+        public bool powerOn;
 
         private bool ePowerOn;
-        private bool wireFixed;
+        private bool wireFixed; 
         private Renderer render;
 
         void Start() {
@@ -22,9 +23,11 @@
             if (ePowerOn && wireFixed)
             {
                 render.material.color = Color.green;
+                powerOn = true;
             }
             else {
                 render.material.color = Color.red;
+                powerOn = false;
             }
         }
     }
