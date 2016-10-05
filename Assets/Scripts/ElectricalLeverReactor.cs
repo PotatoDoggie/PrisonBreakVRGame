@@ -21,15 +21,10 @@
             {
                 go.text = "Electric OFF!";
                 ElectricOn = false;
-                /*key.isGrabbable = true;
-                key.holdButtonToGrab = false;
-                key.grabAttachMechanic = VRTK_InteractableObject.GrabAttachType.Child_Of_Controller;*/
-                eLight.material.color = Color.red;
             }
             else {
                 go.text = "Electric ON!";
                 ElectricOn = true;
-                eLight.material.color = Color.green;
             }
         }
     }

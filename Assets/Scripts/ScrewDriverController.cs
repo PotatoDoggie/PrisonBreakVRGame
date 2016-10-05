@@ -16,8 +16,9 @@ public class ScrewDriverController : MonoBehaviour {
 		if (other.gameObject.CompareTag ("ScrewHead")) {
 			other.gameObject.SetActive (false);
 			count++;
+            Debug.Log("Count" + count);
 			if (count >= 4) {
-				GameObject electricPanelDoor = GameObject.Find ("ElectricPanelDoor");
+				GameObject electricPanelDoor = GameObject.Find ("ElectricalPanelDoor");
 				Rigidbody rb1 = electricPanelDoor.GetComponent<Rigidbody>();
 				rb1.isKinematic = false;
 			}
