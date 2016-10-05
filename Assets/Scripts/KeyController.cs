@@ -10,18 +10,20 @@
 
         private Rigidbody rb;
         private VRTK_InteractableObject keyInteractor;
-
+		private TextMesh tm;
         // Use this for initialization
         void Start()
         {
             rb = GetComponent<Rigidbody>();
             keyInteractor = GetComponent<VRTK_InteractableObject>();
+			tm = GameObject.Find ("Attention").GetComponent<TextMesh> ();
         }
 
         void Update()
         {
             if (electricReactor.ElectricOn == false || tape.wireFixed == true)
             {
+				tm.text = "";
                 keyInteractor.isGrabbable = true;
                 //keyInteractor.touchHighlightColor = Color.clear;
                 //keyInteractor.highlightOnTouch = true;
@@ -29,6 +31,7 @@
                 keyInteractor.grabAttachMechanic = VRTK_InteractableObject.GrabAttachType.Child_Of_Controller;
             }
             else {
+				tm.text = "Electricity in! Dangerous! \nCannot pick up the key now!";
                 keyInteractor.isGrabbable = false;
                 //keyInteractor.highlightOnTouch = false;
             }
