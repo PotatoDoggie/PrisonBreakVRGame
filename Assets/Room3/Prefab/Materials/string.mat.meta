@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 303e1829623c84449ad977b2a6f015c0
 timeCreated: 1475921196
+=======
+guid: 6cbcb93dd084bf643840bc0b9fa71b4e
+timeCreated: 1475944448
+>>>>>>> origin/EscapeTheRoom
 licenseType: Free
 NativeFormatImporter:
   userData: 

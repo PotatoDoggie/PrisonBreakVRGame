@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 65df0bc10aba7465b86570ba08983789
 folderAsset: yes
 timeCreated: 1475921196
+=======
+guid: ee690411187669949823bbfc3bf7d67b
+folderAsset: yes
+timeCreated: 1475944448
+>>>>>>> origin/EscapeTheRoom
 licenseType: Free
 DefaultImporter:
   userData: 

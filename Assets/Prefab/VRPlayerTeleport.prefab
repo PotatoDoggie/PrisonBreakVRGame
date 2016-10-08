@@ -82,7 +82,7 @@ GameObject:
   - 114: {fileID: 114000012013621108}
   - 54: {fileID: 54000012323004984}
   - 65: {fileID: 65000011477205598}
-  - 114: {fileID: 114000012724154300}
+  - 114: {fileID: 114000012306666680}
   m_Layer: 0
   m_Name: VRPlayerTeleport
   m_TagString: Untagged
@@ -578,6 +578,23 @@ MonoBehaviour:
   hideControllerDelay: 0
   globalTouchHighlightColor: {r: 0.62352943, g: 1, b: 1, a: 0}
   customRigidbodyObject: {fileID: 0}
+--- !u!114 &114000012306666680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010303610710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7e6bfad51b1f24f8bba548c8dcecb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blinkTransitionSpeed: 0.6
+  distanceBlinkDelay: 0
+  headsetPositionCompensation: 1
+  ignoreTargetWithTagOrClass: 
+  targetTagOrScriptListPolicy: {fileID: 0}
+  navMeshLimitDistance: 0
 --- !u!114 &114000012664517916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -594,9 +611,9 @@ MonoBehaviour:
   pointerMaterial: {fileID: 0}
   pointerHitColor: {r: 0, g: 0.5, b: 0, a: 1}
   pointerMissColor: {r: 0.8, g: 0, b: 0, a: 1}
-  showPlayAreaCursor: 0
+  showPlayAreaCursor: 1
   playAreaCursorDimensions: {x: 0, y: 0}
-  handlePlayAreaCursorCollisions: 0
+  handlePlayAreaCursorCollisions: 1
   ignoreTargetWithTagOrClass: 
   targetTagOrScriptListPolicy: {fileID: 0}
   pointerVisibility: 0
@@ -616,29 +633,6 @@ MonoBehaviour:
     m_Bits: 4
   validTeleportLocationObject: {fileID: 0}
   rescalePointerTracer: 0
---- !u!114 &114000012724154300
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010303610710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 377ced3493c4e1842a5b1c23f56519db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blinkTransitionSpeed: 0.6
-  distanceBlinkDelay: 0
-  headsetPositionCompensation: 1
-  ignoreTargetWithTagOrClass: ExcludeTeleport
-  targetTagOrScriptListPolicy: {fileID: 0}
-  navMeshLimitDistance: 0
-  playSpaceFalling: 1
-  playSpaceFallRestriction: 0
-  useGravity: 1
-  gravityFallHeight: 1
-  blinkYThreshold: 0.1
-  floorHeightTolerance: 0.001
 --- !u!114 &114000013051004006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -775,9 +769,9 @@ MonoBehaviour:
   pointerMaterial: {fileID: 0}
   pointerHitColor: {r: 0, g: 0.5, b: 0, a: 1}
   pointerMissColor: {r: 0.8, g: 0, b: 0, a: 1}
-  showPlayAreaCursor: 0
+  showPlayAreaCursor: 1
   playAreaCursorDimensions: {x: 0, y: 0}
-  handlePlayAreaCursorCollisions: 0
+  handlePlayAreaCursorCollisions: 1
   ignoreTargetWithTagOrClass: 
   targetTagOrScriptListPolicy: {fileID: 0}
   pointerVisibility: 0
