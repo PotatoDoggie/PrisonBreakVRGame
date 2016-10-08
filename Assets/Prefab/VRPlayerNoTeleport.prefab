@@ -136,7 +136,7 @@ GameObject:
   - 114: {fileID: 114000012820912786}
   - 114: {fileID: 114000011643710220}
   m_Layer: 0
-  m_Name: VRPlayerNoPortal
+  m_Name: VRPlayerNoTeleport
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
