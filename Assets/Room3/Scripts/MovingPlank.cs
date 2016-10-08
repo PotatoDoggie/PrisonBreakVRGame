@@ -37,7 +37,7 @@ public class MovingPlank : MonoBehaviour
         }
     }
 
-    void changeActive()
+    public void changeActive()
     {
         active = !active;
     }
