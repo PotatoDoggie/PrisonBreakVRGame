@@ -20,7 +20,7 @@ public class DestoriableObj : MonoBehaviour {
         {
             dropItem(dropWhenDestried);
         }
-        Destroy(this);
+		Destroy(this.gameObject);
     }
     //initial obj for drop, setactive false
     void dropInitial(GameObject obj) {

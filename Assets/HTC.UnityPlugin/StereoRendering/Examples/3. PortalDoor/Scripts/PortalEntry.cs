@@ -5,7 +5,7 @@ using HTC.UnityPlugin.StereoRendering;
 
 public class PortalEntry : MonoBehaviour
 {
-    public Collider playerCollider;
+    //public Collider playerCollider;
 
     public GameObject hmdRig;
     public GameObject hmdEye;
@@ -16,7 +16,9 @@ public class PortalEntry : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // if hmd has collided with portal door
-        if (other == playerCollider)
+		Debug.Log("player enter"+other.name);
+
+		if (other.CompareTag("Player"))
         {
             stereoRenderer.shouldRender = false;
 
@@ -29,7 +31,9 @@ public class PortalEntry : MonoBehaviour
                                           stereoRenderer.stereoCameraHead.transform.position.y - hmdEye.transform.position.y,
                                           stereoRenderer.stereoCameraHead.transform.position.z - hmdEye.transform.position.z);
             Vector3 camRigTargetPos = hmdRig.transform.position + posDiff;
-
+			Debug.Log (hmdRig.transform.position + ":hmdRig");
+			Debug.Log (hmdRig.transform.position + ":posDiff");
+			Debug.Log(camRigTargetPos+":TargetPos");
             // assign the target position to camera rig
             hmdRig.transform.position = camRigTargetPos;
 

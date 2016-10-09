@@ -4,7 +4,6 @@ using VRTK;
 
 public class LeverReactor : MonoBehaviour {
 
-    public Renderer eLight;
     public bool ElectricOn;
 
     public TextMesh go;
@@ -20,13 +19,13 @@ public class LeverReactor : MonoBehaviour {
 
         if (normalizedValue > 60)
         {
-            go.text = "Electric OFF!";
-            MovingPlank.Instance.changeActive();
+			go.text = "ON";
+			MovingPlank.Instance.changeActive(true);
         }
         else
         {
-            go.text = "Electric ON!";
-            MovingPlank.Instance.changeActive();
+            go.text = "OFF";
+			MovingPlank.Instance.changeActive(false);
 
         }
     }

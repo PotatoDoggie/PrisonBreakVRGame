@@ -61,6 +61,7 @@ GameObject:
   - 114: {fileID: 114000012096760416}
   - 114: {fileID: 114000011095505226}
   - 114: {fileID: 114000012664517916}
+  - 114: {fileID: 114000013800107024}
   m_Layer: 0
   m_Name: Controller (right)
   m_TagString: Untagged
@@ -80,12 +81,11 @@ GameObject:
   - 23: {fileID: 23000012201064288}
   - 33: {fileID: 33000011074470948}
   - 114: {fileID: 114000012013621108}
-  - 54: {fileID: 54000012323004984}
-  - 65: {fileID: 65000011477205598}
   - 114: {fileID: 114000012306666680}
+  - 114: {fileID: 114000012783583210}
   m_Layer: 0
   m_Name: VRPlayerTeleport
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,6 +121,7 @@ GameObject:
   - 114: {fileID: 114000010448062282}
   - 114: {fileID: 114000013777113908}
   - 114: {fileID: 114000013486154232}
+  - 114: {fileID: 114000012635112590}
   m_Layer: 0
   m_Name: Controller (left)
   m_TagString: Untagged
@@ -195,7 +196,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010303610710}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.83, y: 0.5, z: 2.44}
+  m_LocalPosition: {x: 2.27, y: 0.29, z: 0.749}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children:
@@ -210,7 +211,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010211131464}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -375,33 +376,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010303610710}
   m_Mesh: {fileID: 0}
---- !u!54 &54000012323004984
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010303610710}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65000011477205598
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010303610710}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.1, y: 0, z: 2.4000003}
-  m_Center: {x: 0, y: 0.01, z: 0}
 --- !u!81 &81000011214120856
 AudioListener:
   m_ObjectHideFlags: 1
@@ -552,17 +526,17 @@ MonoBehaviour:
   wireframeHeight: 2
   drawWireframeWhenSelectedOnly: 0
   drawInGame: 1
-  size: 0
+  size: 3
   color: {r: 0, g: 1, b: 1, a: 1}
   vertices:
-  - {x: 1.4, y: 0.01, z: -1.0500002}
-  - {x: -1.4, y: 0.01, z: -1.0500002}
-  - {x: -1.4, y: 0.01, z: 1.0500002}
-  - {x: 1.4, y: 0.01, z: 1.0500002}
-  - {x: 1.55, y: 0.01, z: -1.2000002}
-  - {x: -1.55, y: 0.01, z: -1.2000002}
-  - {x: -1.55, y: 0.01, z: 1.2000002}
-  - {x: 1.55, y: 0.01, z: 1.2000002}
+  - {x: 1, y: 0.01, z: 0.75}
+  - {x: 1, y: 0.01, z: -0.75}
+  - {x: -1, y: 0.01, z: -0.75}
+  - {x: -1, y: 0.01, z: 0.75}
+  - {x: 1.15, y: 0.01, z: 0.9}
+  - {x: 1.15, y: 0.01, z: -0.9}
+  - {x: -1.15, y: 0.01, z: -0.9}
+  - {x: -1.15, y: 0.01, z: 0.9}
 --- !u!114 &114000012096760416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -591,10 +565,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blinkTransitionSpeed: 0.6
   distanceBlinkDelay: 0
-  headsetPositionCompensation: 1
+  headsetPositionCompensation: 0
   ignoreTargetWithTagOrClass: 
   targetTagOrScriptListPolicy: {fileID: 0}
   navMeshLimitDistance: 0
+--- !u!114 &114000012635112590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013228383912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnUse: 0
+  hideControllerDelay: 0
 --- !u!114 &114000012664517916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -633,6 +620,21 @@ MonoBehaviour:
     m_Bits: 4
   validTeleportLocationObject: {fileID: 0}
   rescalePointerTracer: 0
+--- !u!114 &114000012783583210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010303610710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab27ec8fbc430744ab37fad5c5f5dc4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headsetYOffset: 0.2
+  ignoreGrabbedCollisions: 1
+  resetPositionOnCollision: 0
+  fallingPhysicsOnly: 0
 --- !u!114 &114000013051004006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -808,6 +810,19 @@ MonoBehaviour:
   grabPrecognition: 0
   throwMultiplier: 1
   createRigidBodyWhenNotTouching: 0
+--- !u!114 &114000013800107024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010234480362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb64f0f2fd6d64faddbcf5d7d3bdbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideControllerOnUse: 0
+  hideControllerDelay: 0
 --- !u!114 &114000014071948526
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -25,6 +25,7 @@ public class SceneSwitchDoor : VRTK_InteractableObject
         SetDoorRotation(usingObject.transform.position);
         SetRotation();
         open = !open;
+		Debug.Log ("used");
         SceneManager.LoadScene("Room3");
     }
 
