@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 3dText
-  m_Shader: {fileID: 4800000, guid: 87f65854bd6a6467ab3195bd53fc1a0b, type: 3}
+  m_Name: Metal
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
@@ -43,13 +43,13 @@ Material:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 17, y: 17}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 2656c00723dde48ff96bc631cd7c5c70, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 69b220c649147cf4bafbf88a6cd958af, type: 3}
+        m_Scale: {x: 17, y: 17}
         m_Offset: {x: 0, y: 0}
     - first:
         name: _MetallicGlossMap
@@ -83,17 +83,20 @@ Material:
         name: _DstBlend
       second: 0
     - first:
+        name: _EmissionScaleUI
+      second: 0
+    - first:
         name: _GlossMapScale
       second: 1
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 0.44
     - first:
         name: _GlossyReflections
       second: 1
     - first:
         name: _Metallic
-      second: 0
+      second: 0.6
     - first:
         name: _Mode
       second: 0
@@ -121,7 +124,10 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0, g: 0.22, b: 1, a: 1}
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _EmissionColorUI
+      second: {r: 1, g: 1, b: 1, a: 1}
