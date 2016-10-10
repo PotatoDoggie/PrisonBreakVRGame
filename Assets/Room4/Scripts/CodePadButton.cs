@@ -10,13 +10,14 @@ public class CodePadButton : MonoBehaviour {
     }
     
 
-	void OnTriggerEnter(Collider other) {
+	void OnCollisionEnter(Collision other) {
 		Debug.Log (gameObject);
 		if (other.gameObject.tag == "Arrow") {
 			targetAnimator.SetTrigger ("ShootingTargetDown");
 			int color = System.Array.IndexOf (buttons, gameObject);
 			combinationShow.inputCode (color);
 			Debug.Log (color);
+			Destroy (other.gameObject);
 		}
 	}
 

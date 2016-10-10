@@ -77,9 +77,9 @@ public class CombinationShow : MonoBehaviour {
 			return;
 		}
 		if (combinationText.activeSelf) {
-			timer = (timer + 1) % 50;
+			timer = (timer + 1) % 150;
 		} else {
-			timer = (timer + 1) % 10;
+			timer = (timer + 1) % 30;
 		}
 		if (timer == 0) {
 			combinationText.SetActive(!combinationText.activeSelf);
@@ -89,7 +89,7 @@ public class CombinationShow : MonoBehaviour {
 				fontMaterial.color = colors[combination[currentColor]];
 				++currentColor;
 				if (currentColor == combinationLength) {
-					timer = -150;
+					timer = -170;
 				}
 			}
 		}
@@ -114,7 +114,7 @@ public class CombinationShow : MonoBehaviour {
 	}
 
 	public void inputCode(int color) {
-		if (!complete) {
+		if (!complete && currentCodeLen < combinationLength) {
 			current [currentCodeLen++] = color;
 		}
 	}
