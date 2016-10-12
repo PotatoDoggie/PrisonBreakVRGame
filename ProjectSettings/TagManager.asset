@@ -15,6 +15,7 @@ TagManager:
   - DoorRight
   - BrokenWire
   - Light
+  - ElectricSpark
   layers:
   - Default
   - TransparentFX
