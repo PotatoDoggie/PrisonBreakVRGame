@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneSwitchDoor : VRTK_InteractableObject
 {
 
-    public string nextSceneName;
+    public GameObject nextScene;
     public bool flipped = false;
     public bool rotated = false;
 
@@ -26,7 +26,8 @@ public class SceneSwitchDoor : VRTK_InteractableObject
         SetRotation();
         open = !open;
 		Debug.Log ("used");
-        SceneManager.LoadScene("Room3");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        player.transform.position = nextScene.transform.position;
     }
 
     protected override void Start()
