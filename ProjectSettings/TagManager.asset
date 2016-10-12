@@ -16,6 +16,7 @@ TagManager:
   - BrokenWire
   - Light
   - ElectricSpark
+  - HealthyWire
   layers:
   - Default
   - TransparentFX

@@ -23,11 +23,10 @@
                 GameObject[] brokenWires = GameObject.FindGameObjectsWithTag("BrokenWire");
                 for (int i = 0; i < brokenWires.Length; i++)
                 {
-                    brokenWires[i].SetActive(false);
+					brokenWires[i].GetComponent<SkinnedMeshRenderer> ().enabled = false;
                 }
-                GameObject healthywire = GameObject.Find("healthy wire");
-                MeshRenderer mr = healthywire.GetComponent<MeshRenderer>();
-                mr.enabled = true;
+				GameObject healthywire = GameObject.FindGameObjectWithTag("HealthyWire");
+				healthywire.GetComponent<SkinnedMeshRenderer> ().enabled = true;
                 wireFixed = true;
             }
         }
