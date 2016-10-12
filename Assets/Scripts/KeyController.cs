@@ -8,6 +8,7 @@
         public ElectricalLeverReactor electricReactor;
         public TapeController tape;
 
+		private GameObject[] objs;
         private Rigidbody rb;
         private VRTK_InteractableObject keyInteractor;
 		private TextMesh tm;
@@ -17,6 +18,7 @@
             rb = GetComponent<Rigidbody>();
             keyInteractor = GetComponent<VRTK_InteractableObject>();
 			tm = GameObject.Find ("Attention").GetComponent<TextMesh> ();
+			objs = GameObject.FindGameObjectsWithTag ("ElectricSpark");
         }
 
         void Update()
@@ -29,6 +31,10 @@
                 //keyInteractor.highlightOnTouch = true;
                 keyInteractor.holdButtonToGrab = false;
                 keyInteractor.grabAttachMechanic = VRTK_InteractableObject.GrabAttachType.Child_Of_Controller;
+				//Disable the electric sparks 
+				for (int i = 0; i < objs.Length; i++) {
+					objs [i].GetComponent<MeshRenderer> ().enabled = false;
+				}
             }
             else {
 				tm.text = "Electricity in! Dangerous! \nCannot pick up the key now!";

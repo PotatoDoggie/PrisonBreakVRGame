@@ -5,9 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scene/Room3.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scene/room3_2.unity
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/_scene/Room 4.unity
+=======
+    path: Assets/_scene/Room3_1.unity
+>>>>>>> 75f237c775e04c8e0a75e031f897890542f5c1e0
