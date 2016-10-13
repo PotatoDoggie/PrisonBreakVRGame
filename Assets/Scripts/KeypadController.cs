@@ -26,14 +26,17 @@ public class KeypadController : VRTK_InteractableObject
 	public override void StartUsing(GameObject usingObject)
 	{
 		base.StartUsing(usingObject);
-		pressButtons(usingObject.name);
+		pressButtons(this.gameObject.name);
 	}
 
 	void pressButtons(string name)
     {
 		input = tm.text;
+        if (input.Equals("Password Wrong!")) {
+            tm.text = "";
+        }
 		doorOpen = door.GetComponent<DoorController> ().doorOpen;
-        if (eLight.powerOn) {
+        if (true) {
             if (!doorOpen)
             {
                 if (name.Equals("Cube_0"))
@@ -88,7 +91,8 @@ public class KeypadController : VRTK_InteractableObject
                 }
                 else if (name.Equals("Cube_cancel"))
                 {
-                    input = "";
+                    int length = input.Length;
+                    input = input.Remove(length - 1, 1);
                     tm.text = input;
                 }
                 else if (name.Equals("Cube_enter"))
