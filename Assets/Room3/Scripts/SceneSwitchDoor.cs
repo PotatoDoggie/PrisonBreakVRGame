@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneSwitchDoor : VRTK_InteractableObject
 {
 
-    public GameObject nextScene;
+    public int nextSceneIndex;
     public bool flipped = false;
     public bool rotated = false;
 
@@ -28,8 +28,8 @@ public class SceneSwitchDoor : VRTK_InteractableObject
 		Debug.Log ("used");
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         //fade added
-        SteamVR_Fade.Start(Color.black, 0.25f);
-        player.transform.position = nextScene.transform.position;
+        SteamVR_Fade.Start(Color.black, 2.25f);
+        SceneManager.LoadScene(nextSceneIndex);
     }
 
     protected override void Start()

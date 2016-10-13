@@ -21,6 +21,7 @@ GameObject:
   - 4: {fileID: 4000011790852976}
   - 114: {fileID: 114000010229631820}
   - 135: {fileID: 135000011796683860}
+  - 114: {fileID: 114000010142749150}
   m_Layer: 0
   m_Name: Balloon
   m_TagString: Untagged
@@ -82,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010182919940}
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0.106}
+  m_LocalPosition: {x: 1.215, y: 4, z: -0.233}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -175,6 +176,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014110970874}
   m_Mesh: {fileID: 4300002, guid: bcf63894e65e46f40be7aeb69ae0be10, type: 3}
+--- !u!114 &114000010142749150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010182919940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000010229631820
 MonoBehaviour:
   m_ObjectHideFlags: 1

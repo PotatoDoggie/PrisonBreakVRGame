@@ -15,12 +15,13 @@ public class DestoriableObj : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-
-        if (dropWhenDestried != null)
-        {
-            dropItem(dropWhenDestried);
+        if (other.CompareTag("Arrow")) {
+            if (dropWhenDestried != null)
+            {
+                dropItem(dropWhenDestried);
+            }
+            Destroy(this.gameObject);
         }
-		Destroy(this.gameObject);
     }
     //initial obj for drop, setactive false
     void dropInitial(GameObject obj) {
