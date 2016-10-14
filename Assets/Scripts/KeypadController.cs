@@ -4,7 +4,7 @@ using System.Collections;
 
 public class KeypadController : VRTK_InteractableObject
 {
-    private string curPassword = "2628";
+    private string curPassword = "2826";
     private string input;
     private bool doorOpen;
     //private bool keypadScreen;
@@ -31,10 +31,11 @@ public class KeypadController : VRTK_InteractableObject
 
 	void pressButtons(string name)
     {
-		input = tm.text;
-        if (input.Equals("Password Wrong!")) {
+        if (tm.text.Equals("Password Wrong!"))
+        {
             tm.text = "";
         }
+        input = tm.text;
 		doorOpen = door.GetComponent<DoorController> ().doorOpen;
         if (true) {
             if (!doorOpen)
@@ -89,7 +90,7 @@ public class KeypadController : VRTK_InteractableObject
                     input += "9";
                     tm.text = input;
                 }
-                else if (name.Equals("Cube_cancel"))
+                else if (name.Equals("Cube_cancel") && !input.Equals(""))
                 {
                     int length = input.Length;
                     input = input.Remove(length - 1, 1);
