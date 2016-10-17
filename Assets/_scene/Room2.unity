@@ -6437,6 +6437,104 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 0.22
       objectReference: {fileID: 0}
+    - target: {fileID: 102000013839717702, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278387464
+      objectReference: {fileID: 0}
+    - target: {fileID: 102000014161811050, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278387464
+      objectReference: {fileID: 0}
+    - target: {fileID: 102000011351385228, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278387464
+      objectReference: {fileID: 0}
+    - target: {fileID: 102000013256336846, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278387464
+      objectReference: {fileID: 0}
+    - target: {fileID: 102000010402569712, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278387464
+      objectReference: {fileID: 0}
+    - target: {fileID: 102000013543689400, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278387464
+      objectReference: {fileID: 0}
+    - target: {fileID: 102000010149029520, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278387464
+      objectReference: {fileID: 0}
+    - target: {fileID: 102000013580021696, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278387464
+      objectReference: {fileID: 0}
+    - target: {fileID: 102000014044408398, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278387464
+      objectReference: {fileID: 0}
+    - target: {fileID: 102000012344700124, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278387464
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011586603614, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_TagString
+      value: KeypadText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012274317452, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_TagString
+      value: KeypadText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010172080016, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_TagString
+      value: KeypadText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013960951108, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_TagString
+      value: KeypadText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010386133630, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_TagString
+      value: KeypadText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011687408200, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_TagString
+      value: KeypadText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013376504564, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_TagString
+      value: KeypadText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012929589462, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_TagString
+      value: KeypadText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014146440632, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_TagString
+      value: KeypadText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010214088370, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_TagString
+      value: KeypadText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014146440632, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011586603614, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
   m_IsPrefabParent: 0
