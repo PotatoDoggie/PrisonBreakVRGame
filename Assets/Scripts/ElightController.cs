@@ -10,10 +10,14 @@
 
         private bool ePowerOn;
         private bool wireFixed; 
-        private Renderer render;
+		private GameObject wallLightOff;
+		private GameObject wallLightOn;
+        //private Renderer render;
 
         void Start() {
-            render = GetComponent<Renderer>();
+            //render = GetComponent<Renderer>();
+			wallLightOn = GameObject.Find("Lamp_ON");
+			wallLightOff = GameObject.Find ("Lamp_OFF");
         }
         // Update is called once per frame
         void Update()
@@ -22,11 +26,15 @@
             wireFixed = tape.wireFixed;
             if (ePowerOn && wireFixed)
             {
-                render.material.color = Color.green;
+                //render.material.color = Color.green;
+				wallLightOn.SetActive(true);
+				wallLightOff.SetActive (false);
                 powerOn = true;
             }
             else {
-                render.material.color = Color.red;
+                //render.material.color = Color.red;
+				wallLightOn.SetActive(false);
+				wallLightOff.SetActive (true);
                 powerOn = false;
             }
         }
