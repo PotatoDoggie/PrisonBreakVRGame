@@ -9,17 +9,16 @@ public class KeypadController : VRTK_InteractableObject
     private bool doorOpen;
     //private bool keypadScreen;
  
-    //public Transform doorHinge;
     private GameObject screen;
     private GameObject door;
-    private ElightController eLight;
+    //private ElightController eLight;
 	private TextMesh tm;
 
 	protected override void Start() {
 		base.Start ();
 		screen = GameObject.Find ("Screen");
 		door = GameObject.Find ("PrisonCellDoorWayDoor");
-		eLight = GameObject.Find ("ElecticLight").GetComponent<ElightController> ();
+		//eLight = GameObject.Find ("ElecticLight").GetComponent<ElightController> ();
 		tm = screen.GetComponent<TextMesh>();
 	}
 

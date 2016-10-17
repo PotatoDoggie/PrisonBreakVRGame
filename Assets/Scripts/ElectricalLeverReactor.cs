@@ -4,7 +4,7 @@
 
     public class    ElectricalLeverReactor : MonoBehaviour
     {
-        public Renderer eLight;
+        //public Renderer eLight;
         public bool ElectricOn;
 
         private void Start()
