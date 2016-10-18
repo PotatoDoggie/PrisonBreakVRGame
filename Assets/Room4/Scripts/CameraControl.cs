@@ -6,7 +6,7 @@ public class CameraControl : VRTK_InteractableObject {
 	public RotateCamera rotateCamera;
 	
 	// Update is called once per frame
-	void Update () {
+	protected override void Update () {
 		if (Input.GetKeyDown ("c")) {
 			rotateCamera.changeRotationStatus ();
 		}

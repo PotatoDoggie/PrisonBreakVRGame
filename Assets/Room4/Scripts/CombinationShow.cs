@@ -3,26 +3,41 @@ using System.Collections;
 using System.Linq;
 
 public class CombinationShow : MonoBehaviour {
+
 	/**
-	 * Time line
-	 * 0 -> 49: every color
-	 * 0 -> 9: every interval
-	 * -150 -> -21: last color (the window to input password, expires after it)
-	 * -20 -> -1: ready text, generate new combination
+	 * State:
+	 * 0 -- Ready
+	 * 1 -- Show text on the wall
+	 * 2 -- Hide text on the wall (interval)
+	 * 3 -- Wait for the next ready state
+	 * -1 -- Start
+	 * 0 -> 1 -> 2 -> 1 -> 2 -> ... -> 1 -> 3 (do not change anything) -> 0 ...
+	 * -1 -> 0
 	 */
+
+	public float readyTime = 1.5f;
+	public float showTextTime = 1.5f;
+	public float intervalTime = 0.5f;
+	public float endTime = 0.5f;
+
+
 	public GameObject combinationText;
 	public GameObject readyText;
 	public int combinationLength;
 	public Material fontMaterial;
 	public GameObject door;
+	public GameObject sceneSwitch;
 
 	private Animator doorAnimator;
 
-	private int timer;
+	private float currentTimer;
+
 	private int[] combination;
 
 	private int[] current;
 	private int currentCodeLen;
+
+	private int currentState;
 
 	private bool complete;
 
@@ -34,15 +49,17 @@ public class CombinationShow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		doorAnimator = door.GetComponent<Animator> ();
-		timer = 0;
-		combinationText.SetActive (false);
+		currentState = -1;
+		currentTimer = 0;
+
 		colorTexts = new string[] {"Red", "Yellow", "Blue", "Green"};
 		random = new System.Random ();
 		//red, yellow, blue, green
 		colors = new Color[] {Color.red, Color.yellow, new Color(0, .22f, 1), new Color(.35f, .65f, .35f)};
+
 		//the generated combination
 		combination = new int[combinationLength];
-		generateCombination ();
+
 		complete = false;
 	}
 	
@@ -51,46 +68,72 @@ public class CombinationShow : MonoBehaviour {
 		if (complete) {
 			return;
 		}
+
 		if (currentCodeLen == combinationLength) {
 			Debug.Log ("Code complete, comparing...");
 			if (current.SequenceEqual (combination)) {
 				Debug.Log ("Correct, open the door");
 				doorAnimator.SetTrigger ("DoorOpen");
+				sceneSwitch.SetActive (true);
 				gameObject.SetActive (false);
 				complete = true;
 				return;
 			} else {
 				Debug.Log ("Wrong");
-				timer = -20;
+				currentTimer = -1;
+				currentState = -1;
 			}
-
 		}
 
-		if (timer == -20) {
-			//Set ready text
-			TextMesh combTextMesh = combinationText.GetComponent<TextMesh> ();
-			combTextMesh.text = "Ready!";
-			generateCombination ();
-		}
-		if (timer < 0) {
-			++timer;
-			return;
-		}
-		if (combinationText.activeSelf) {
-			timer = (timer + 1) % 150;
-		} else {
-			timer = (timer + 1) % 30;
-		}
-		if (timer == 0) {
-			combinationText.SetActive(!combinationText.activeSelf);
-			if (combinationText.activeSelf) {
-				TextMesh combTextMesh = combinationText.GetComponent<TextMesh> ();
-				combTextMesh.text = colorTexts[random.Next (0, colorTexts.Length)];
-				fontMaterial.color = colors[combination[currentColor]];
-				++currentColor;
-				if (currentColor == combinationLength) {
-					timer = -170;
-				}
+		currentTimer -= Time.deltaTime;
+
+		if (currentTimer < 0) {
+			switch (currentState) {
+				case 0:
+					currentState = 1;
+					break;
+				case 1:
+					if (currentColor == combinationLength) {
+						currentState = 3;
+					} else {
+						currentState = 2;
+					}
+					break;
+				case 2:
+					currentState = 1;
+					break;
+				case 3:
+					currentState = 0;
+					break;
+				case -1:
+					currentState = 0;
+					break;
+			}
+			//After state update
+			switch (currentState) {
+				case 0:
+					currentTimer = readyTime;
+					//Set ready text
+					combinationText.SetActive (true);
+					fontMaterial.color = Color.black;
+					combinationText.GetComponent<TextMesh> ().text = "Ready!";
+					generateCombination ();
+					break;
+				case 1:
+					currentTimer = showTextTime;
+					combinationText.SetActive (true);
+					TextMesh combTextMesh = combinationText.GetComponent<TextMesh> ();
+					combTextMesh.text = colorTexts [random.Next (0, colorTexts.Length)];
+					fontMaterial.color = colors [combination [currentColor]];
+					++currentColor;
+					break;
+				case 2:
+					combinationText.SetActive (false);
+					currentTimer = intervalTime;
+					break;
+				case 3:
+					currentTimer = endTime;
+					break;
 			}
 		}
 	}
