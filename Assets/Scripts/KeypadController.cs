@@ -113,6 +113,7 @@ public class KeypadController : VRTK_InteractableObject
                 if (doorOpen)
                 {
                     door.transform.Rotate(new Vector3(0, -45, 0));
+
                 }
             }
         }

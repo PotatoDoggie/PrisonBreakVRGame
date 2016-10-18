@@ -693,7 +693,7 @@ MeshCollider:
   m_GameObject: {fileID: 55798421}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -1174,6 +1174,21 @@ Prefab:
     - target: {fileID: 4000010600848468, guid: 87225f6e5e199459d96c127a428fcc99, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012105867662, guid: 87225f6e5e199459d96c127a428fcc99,
+        type: 2}
+      propertyPath: highlightOnTouch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012105867662, guid: 87225f6e5e199459d96c127a428fcc99,
+        type: 2}
+      propertyPath: isGrabbable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012105867662, guid: 87225f6e5e199459d96c127a428fcc99,
+        type: 2}
+      propertyPath: holdButtonToGrab
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87225f6e5e199459d96c127a428fcc99, type: 2}
@@ -4225,7 +4240,7 @@ MeshCollider:
   m_GameObject: {fileID: 290042293}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -6294,6 +6309,66 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013551378180, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011215534350, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013902539014, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014183941482, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011340181980, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013847819832, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013537327260, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012768544954, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010597596744, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014010802044, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011496400514, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012186017788, guid: 434c29709198d4b48bfcca02e01078d3,
+        type: 2}
+      propertyPath: useOverrideButton
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 434c29709198d4b48bfcca02e01078d3, type: 2}
   m_IsPrefabParent: 0
@@ -7561,7 +7636,7 @@ MeshCollider:
   m_GameObject: {fileID: 543758543}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -8032,6 +8107,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 408470, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.056
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11420968, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
@@ -8057,8 +8136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointerToggleButton: 6
   pointerSetButton: 6
-  grabToggleButton: 4
-  useToggleButton: 3
+  grabToggleButton: 2
+  useToggleButton: 2
   uiClickButton: 3
   menuToggleButton: 7
   axisFidelity: 1
@@ -8118,7 +8197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hideControllerOnTouch: 0
   hideControllerDelay: 0
-  globalTouchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  globalTouchHighlightColor: {r: 0, g: 1, b: 1, a: 0}
   customRigidbodyObject: {fileID: 0}
 --- !u!114 &568380553
 MonoBehaviour:
@@ -8150,8 +8229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointerToggleButton: 6
   pointerSetButton: 6
-  grabToggleButton: 4
-  useToggleButton: 3
+  grabToggleButton: 2
+  useToggleButton: 2
   uiClickButton: 3
   menuToggleButton: 7
   axisFidelity: 1
@@ -8211,7 +8290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hideControllerOnTouch: 0
   hideControllerDelay: 0
-  globalTouchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  globalTouchHighlightColor: {r: 0, g: 1, b: 1, a: 0}
   customRigidbodyObject: {fileID: 0}
 --- !u!114 &568380557
 MonoBehaviour:
@@ -8438,6 +8517,26 @@ Prefab:
     - target: {fileID: 4000011179781460, guid: 4f7a093f2b55cdd438eaff7d1f18b993, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 64000012413254964, guid: 4f7a093f2b55cdd438eaff7d1f18b993,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64000012007179840, guid: 4f7a093f2b55cdd438eaff7d1f18b993,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64000012026652532, guid: 4f7a093f2b55cdd438eaff7d1f18b993,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64000011345621562, guid: 4f7a093f2b55cdd438eaff7d1f18b993,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f7a093f2b55cdd438eaff7d1f18b993, type: 2}
@@ -8693,7 +8792,7 @@ MeshCollider:
   m_GameObject: {fileID: 629596162}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -9051,15 +9150,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightOnTouch: 0
+  highlightOnTouch: 1
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   rumbleOnTouch: {x: 0, y: 0}
   allowedTouchControllers: 0
   hideControllerOnTouch: 0
-  isGrabbable: 0
+  isGrabbable: 1
   isDroppable: 1
   isSwappable: 1
-  holdButtonToGrab: 1
+  holdButtonToGrab: 0
   grabOverrideButton: 8
   rumbleOnGrab: {x: 0, y: 0}
   allowedGrabControllers: 0
@@ -11921,15 +12020,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightOnTouch: 0
+  highlightOnTouch: 1
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   rumbleOnTouch: {x: 0, y: 0}
   allowedTouchControllers: 0
   hideControllerOnTouch: 0
-  isGrabbable: 0
+  isGrabbable: 1
   isDroppable: 1
   isSwappable: 1
-  holdButtonToGrab: 1
+  holdButtonToGrab: 0
   grabOverrideButton: 8
   rumbleOnGrab: {x: 0, y: 0}
   allowedGrabControllers: 0
@@ -16379,10 +16478,10 @@ MonoBehaviour:
   rumbleOnTouch: {x: 0, y: 0}
   allowedTouchControllers: 0
   hideControllerOnTouch: 0
-  isGrabbable: 0
+  isGrabbable: 1
   isDroppable: 1
   isSwappable: 1
-  holdButtonToGrab: 1
+  holdButtonToGrab: 0
   grabOverrideButton: 8
   rumbleOnGrab: {x: 0, y: 0}
   allowedGrabControllers: 0
@@ -17918,6 +18017,7 @@ GameObject:
   - 33: {fileID: 1246711559}
   - 64: {fileID: 1246711558}
   - 23: {fileID: 1246711557}
+  - 114: {fileID: 1246711561}
   m_Layer: 0
   m_Name: Water on the floor
   m_TagString: Untagged
@@ -17962,7 +18062,7 @@ MeshCollider:
   m_GameObject: {fileID: 1246711556}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -17987,6 +18087,20 @@ Transform:
   - {fileID: 1251419682}
   m_Father: {fileID: 1198787484}
   m_RootOrder: 0
+--- !u!114 &1246711561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1246711556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e32edc303bfa4ac8ac6edadbb3e602b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyInteractor: {fileID: 1729323092}
+  electricReactor: {fileID: 2114101889}
+  tape: {fileID: 947429434}
 --- !u!1 &1251419681
 GameObject:
   m_ObjectHideFlags: 0
@@ -19395,7 +19509,7 @@ MeshCollider:
   m_GameObject: {fileID: 1324349012}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -20062,7 +20176,7 @@ MeshCollider:
   m_GameObject: {fileID: 1397560688}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -23486,7 +23600,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1729323087}
   m_LocalRotation: {x: 0.09229593, y: 0.09229593, z: 0.7010574, w: 0.7010574}
-  m_LocalPosition: {x: 7.51, y: -0.38, z: -0.632}
+  m_LocalPosition: {x: 7.51, y: -0.3940146, z: -0.632}
   m_LocalScale: {x: 0.060000002, y: 0.04, z: 0.100000024}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -23554,24 +23668,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3abaf4521bf2344ea21ed3020b98eb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightOnTouch: 0
+  highlightOnTouch: 1
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   rumbleOnTouch: {x: 0, y: 0}
   allowedTouchControllers: 0
   hideControllerOnTouch: 0
-  isGrabbable: 0
+  isGrabbable: 1
   isDroppable: 1
   isSwappable: 1
-  holdButtonToGrab: 1
+  holdButtonToGrab: 0
   grabOverrideButton: 8
   rumbleOnGrab: {x: 0, y: 0}
   allowedGrabControllers: 0
   precisionSnap: 0
   rightSnapHandle: {fileID: 0}
   leftSnapHandle: {fileID: 0}
-  hideControllerOnGrab: 0
+  hideControllerOnGrab: 1
   stayGrabbedOnTeleport: 1
-  grabAttachMechanic: 0
+  grabAttachMechanic: 4
   detachThreshold: 500
   springJointStrength: 500
   springJointDamper: 50
@@ -26643,11 +26757,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 35d558844c6d4bd4099115e71679ca77, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.7309444
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 35d558844c6d4bd4099115e71679ca77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5358294
+      value: -0.32
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 35d558844c6d4bd4099115e71679ca77, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26675,11 +26789,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 35d558844c6d4bd4099115e71679ca77, type: 3}
       propertyPath: m_LocalScale.x
-      value: 89.28572
+      value: 101.562515
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 35d558844c6d4bd4099115e71679ca77, type: 3}
       propertyPath: m_LocalScale.y
-      value: 89.28572
+      value: 108.258934
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 35d558844c6d4bd4099115e71679ca77, type: 3}
       propertyPath: m_LocalScale.z
@@ -27704,7 +27818,7 @@ MeshCollider:
   m_GameObject: {fileID: 2108988639}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -27965,7 +28079,7 @@ MeshCollider:
   m_GameObject: {fileID: 2133573964}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
