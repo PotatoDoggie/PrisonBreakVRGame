@@ -5,14 +5,14 @@
     public class TapeController : MonoBehaviour
     {
 
-        private Rigidbody rb;
+        //private Rigidbody rb;
 
         public bool wireFixed;
 
         // Use this for initialization
         void Start()
         {
-            rb = GetComponent<Rigidbody>();
+            //rb = GetComponent<Rigidbody>();
             wireFixed = false;
         }
 

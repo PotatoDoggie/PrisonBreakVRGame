@@ -7,6 +7,8 @@
         public ElectricalLeverReactor eReactor;
         public TapeController tape;
         public bool powerOn;
+		public Material material_light_on;
+		public Material material_light_off;
 
         private bool ePowerOn;
         private bool wireFixed; 
@@ -15,11 +17,11 @@
         //private Renderer render;
 		private GameObject[] keypadTexts;
 		private Color mycolor;
+		private Renderer rd;
 
         void Start() {
             //render = GetComponent<Renderer>();
-			wallLightOn = GameObject.Find("Lamp_ON");
-			wallLightOff = GameObject.Find ("Lamp_OFF");
+			rd = GameObject.Find ("LampCover").GetComponent<Renderer>(); 
 			keypadTexts = GameObject.FindGameObjectsWithTag ("KeypadText");
 			mycolor = keypadTexts [0].GetComponent<TextMesh> ().color;
         }
@@ -33,8 +35,7 @@
 				powerOn = true;
 
                 //render.material.color = Color.green;
-				wallLightOn.SetActive(true);
-				wallLightOff.SetActive (false);
+				rd.material = material_light_on;
 
 				//Set color for keypad text -- power on
 				for (int i = 0; i < keypadTexts.Length; i++) {
@@ -45,8 +46,7 @@
 				powerOn = false;
 
                 //render.material.color = Color.red;
-				wallLightOn.SetActive(false);
-				wallLightOff.SetActive (true);
+				rd.material = material_light_off;
 
                 //Set color for keypad text -- power off
 				//Color newColor = new Color(0x8, 0x3, 0x3, 0x255);
