@@ -12049,7 +12049,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012778549088, guid: 8389b236502a146fb9f74f6a7ceeda36, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 33000011216805178, guid: 8389b236502a146fb9f74f6a7ceeda36,
         type: 2}
@@ -12765,6 +12765,18 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 35d558844c6d4bd4099115e71679ca77, type: 3}
   m_PrefabInternal: {fileID: 2024888903}
+--- !u!64 &991852301
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 991852300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 35d558844c6d4bd4099115e71679ca77, type: 3}
 --- !u!54 &991852303
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27331,6 +27343,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 478020, guid: 3f8b693777f430b4a8ecdfe2e98692d9, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478020, guid: 3f8b693777f430b4a8ecdfe2e98692d9, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
