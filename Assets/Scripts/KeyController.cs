@@ -23,17 +23,25 @@
 
         void Update()
         {
-			if(electricReactor.ElectricOn == false || tape.wireFixed == true)
-			{
-				tm.text = "";
-				keyInteractor.isGrabbable = true;
-				keyInteractor.holdButtonToGrab = false;
-				keyInteractor.grabAttachMechanic = VRTK_InteractableObject.GrabAttachType.Child_Of_Controller;
-				//Disable the electric sparks 
-				for (int i = 0; i < objs.Length; i++) {
-					objs [i].GetComponent<MeshRenderer> ().enabled = false;
-				}
-			}
+            if (electricReactor.ElectricOn == false || tape.wireFixed == true)
+            {
+                tm.text = "";
+                keyInteractor.isGrabbable = true;
+                keyInteractor.holdButtonToGrab = false;
+                keyInteractor.grabAttachMechanic = VRTK_InteractableObject.GrabAttachType.Child_Of_Controller;
+                //Disable the electric sparks 
+                for (int i = 0; i < objs.Length; i++)
+                {
+                    objs[i].GetComponent<MeshRenderer>().enabled = false;
+                }
+            }
+            else {
+                //Enable the electric sparks 
+                for (int i = 0; i < objs.Length; i++)
+                {
+                    objs[i].GetComponent<MeshRenderer>().enabled = true;
+                }
+            }
 
         }
         void OnTriggerEnter(Collider other)

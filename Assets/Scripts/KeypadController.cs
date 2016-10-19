@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using VRTK;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class KeypadController : VRTK_InteractableObject
@@ -7,22 +8,37 @@ public class KeypadController : VRTK_InteractableObject
     private string curPassword = "2826";
     private string input;
     private bool doorOpen;
-    //private bool keypadScreen;
- 
+    private ElectricalLeverReactor lever;
+    private TapeController tape;
     private GameObject screen;
     private GameObject door;
+
     //private ElightController eLight;
 	private TextMesh tm;
+    private int timer = 100;
+    private int delta = 10;
 
 	protected override void Start() {
 		base.Start ();
 		screen = GameObject.Find ("Screen");
 		door = GameObject.Find ("PrisonCellDoorWayDoor");
 		//eLight = GameObject.Find ("ElecticLight").GetComponent<ElightController> ();
-		tm = screen.GetComponent<TextMesh>();
+        lever = GameObject.Find("Lever").GetComponent<ElectricalLeverReactor>();
+        tape = GameObject.Find("Tape").GetComponent<TapeController>();
+        tm = screen.GetComponent<TextMesh>();
 	}
-
-	public override void StartUsing(GameObject usingObject)
+    protected override void Update()
+    {
+        base.Update();
+        if (doorOpen) {
+            timer = timer - delta;
+            if(timer < 0)
+            {
+                SceneManager.LoadScene(1);
+            }
+        }
+    }
+    public override void StartUsing(GameObject usingObject)
 	{
 		base.StartUsing(usingObject);
 		pressButtons(this.gameObject.name);
@@ -36,7 +52,8 @@ public class KeypadController : VRTK_InteractableObject
         }
         input = tm.text;
 		doorOpen = door.GetComponent<DoorController> ().doorOpen;
-        if (true) {
+        if (lever.ElectricOn && tape.wireFixed)
+        {
             if (!doorOpen)
             {
                 if (name.Equals("Cube_0"))
@@ -100,7 +117,7 @@ public class KeypadController : VRTK_InteractableObject
                     if (input.Equals(curPassword))
                     {
                         doorOpen = true;
-						door.GetComponent<DoorController> ().doorOpen = doorOpen;
+                        door.GetComponent<DoorController>().doorOpen = doorOpen;
                         input = "";
                         tm.text = "Congratuations!";
                     }
@@ -116,6 +133,9 @@ public class KeypadController : VRTK_InteractableObject
 
                 }
             }
+        }
+        else {
+            tm.text = "";
         }
 
     }

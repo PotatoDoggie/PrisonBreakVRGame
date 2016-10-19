@@ -10,11 +10,10 @@ public class WaterController : MonoBehaviour {
 	private TextMesh tm;
 
 	void Start(){
-		keyInteractor = GetComponent<VRTK_InteractableObject>();
 		tm = GameObject.Find ("Attention").GetComponent<TextMesh> ();
 	}
 
-	void OnTriggerEnter(Collider other) {
+	void OnTriggerStay(Collider other) {
 		//Only when the key is in the water it can be changed to un grabbable
 		if (other.gameObject.name.Equals ("key_silver")) {
 			if (electricReactor.ElectricOn == true && tape.wireFixed == false) {
