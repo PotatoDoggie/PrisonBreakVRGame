@@ -28,8 +28,11 @@ public class SceneSwitchDoor : VRTK_InteractableObject
 		Debug.Log ("used");
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         //fade added
-        SteamVR_Fade.Start(Color.black, 2.25f);
+        SteamVR_Fade.Start(Color.black, 0);
+        SteamVR_Fade.Start(Color.clear, 3);
         SceneManager.LoadScene(nextSceneIndex);
+        
+        
     }
 
     protected override void Start()

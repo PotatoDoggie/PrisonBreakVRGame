@@ -27,6 +27,9 @@ public class Room3_ElectricSwitch : VRTK_InteractableObject
         isOn = !isOn;
         LinesEffect();
         PillarEffect();
+        var vr = SteamVR.instance;
+        SteamVR_Fade.Start(Color.black, 0);
+        SteamVR_Fade.Start(Color.clear, 10);
     }
 
     protected override void Update()
