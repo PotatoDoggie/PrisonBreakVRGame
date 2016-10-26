@@ -16,7 +16,7 @@ public class KeypadController : VRTK_InteractableObject
     //private ElightController eLight;
 	private TextMesh tm;
     private int timer = 100;
-    private int delta = 5;
+    private int delta = 3;
 
 	protected override void Start() {
 		base.Start ();
@@ -35,7 +35,7 @@ public class KeypadController : VRTK_InteractableObject
             if(timer < 0)
             {
                 SteamVR_Fade.Start(Color.black, 0);
-                SteamVR_Fade.Start(Color.clear, 3);
+                SteamVR_Fade.Start(Color.clear, 5);
                 SceneManager.LoadScene(1);
             }
         }

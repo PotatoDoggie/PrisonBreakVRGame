@@ -156,7 +156,7 @@ MonoBehaviour:
   isGrabbable: 1
   isDroppable: 1
   isSwappable: 1
-  holdButtonToGrab: 1
+  holdButtonToGrab: 0
   grabOverrideButton: 8
   rumbleOnGrab: {x: 0, y: 0}
   allowedGrabControllers: 0
