@@ -26,7 +26,8 @@ public class CombinationShow : MonoBehaviour {
 	public int combinationLength;
 	public Material fontMaterial;
 	public GameObject door;
-	public GameObject sceneSwitch;
+	public SceneSwitchDoor sceneSwitchDoor;
+
 
 	private Animator doorAnimator;
 
@@ -74,8 +75,10 @@ public class CombinationShow : MonoBehaviour {
 			if (current.SequenceEqual (combination)) {
 				Debug.Log ("Correct, open the door");
 				doorAnimator.SetTrigger ("DoorOpen");
-				sceneSwitch.SetActive (true);
 				gameObject.SetActive (false);
+				sceneSwitchDoor.isUsable = true;
+
+				//sceneSwitchDoor.highlightOnTouch = true;
 				complete = true;
 				return;
 			} else {
