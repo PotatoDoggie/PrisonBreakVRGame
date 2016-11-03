@@ -22,9 +22,7 @@ public class CodePadButton : MonoBehaviour {
 	}
 
 	void Update() {
-		/*if (Input.GetKeyDown ("t")) {
-			targetAnimator.SetTrigger ("ShootingTargetDown");
-		}*/
+
 	}
 
 }

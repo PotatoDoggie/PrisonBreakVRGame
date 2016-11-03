@@ -46,13 +46,16 @@ public class CombinationShow : MonoBehaviour {
 	private Color[] colors;
 	private System.Random random;
 	private int currentColor;
+	private GameObject[] objs;
+	private Color lightOriginalColor;
+	private Color lightRightColor;
+	private Color lightWrongColor;
 
 	// Use this for initialization
 	void Start () {
 		doorAnimator = door.GetComponent<Animator> ();
 		currentState = -1;
 		currentTimer = 0;
-
 		colorTexts = new string[] {"Red", "Yellow", "Blue", "Green"};
 		random = new System.Random ();
 		//red, yellow, blue, green
@@ -62,14 +65,34 @@ public class CombinationShow : MonoBehaviour {
 		combination = new int[combinationLength];
 
 		complete = false;
+
+		objs = GameObject.FindGameObjectsWithTag ("LightIndicator");
+		lightOriginalColor = Color.black;
+		lightRightColor = Color.green;
+		lightWrongColor = Color.red;
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
+//		if (Input.GetKeyDown ("q")) {
+//			//targetAnimator.SetTrigger ("ShootingTargetDown");
+//			inputCode (0);
+//		} 
+//		if (Input.GetKeyDown ("w")) {
+//			inputCode (1);
+//		} 
+//		if (Input.GetKeyDown ("e")) {
+//			inputCode (2);
+//		} 
+//		if (Input.GetKeyDown ("r")) {
+//			inputCode (3);
+//		}
+
 		if (complete) {
 			return;
 		}
-
+			
 		if (currentCodeLen == combinationLength) {
 			Debug.Log ("Code complete, comparing...");
 			if (current.SequenceEqual (combination)) {
@@ -119,7 +142,7 @@ public class CombinationShow : MonoBehaviour {
 					//Set ready text
 					combinationText.SetActive (true);
 					fontMaterial.color = Color.black;
-					combinationText.GetComponent<TextMesh> ().text = "Ready!";
+					combinationText.GetComponent<TextMesh> ().text = "Ready!";				
 					generateCombination ();
 					break;
 				case 1:
@@ -152,6 +175,12 @@ public class CombinationShow : MonoBehaviour {
 			combination [i] = random.Next (0, 4);
 			s += colorTexts[combination[i]];
 		}
+		//Set light color, objs.length = 3.
+		for (int i = 0; i < objs.Length; i++) {
+			Material mat = objs [i].GetComponent<Renderer> ().material;
+			mat.SetColor("_EmissionColor", lightOriginalColor);
+			//Debug.Log ("AAAAAAAA, set light indicator to original");
+		}
 		Debug.Log (s);
 	}
 
@@ -161,6 +190,19 @@ public class CombinationShow : MonoBehaviour {
 
 	public void inputCode(int color) {
 		if (!complete && currentCodeLen < combinationLength) {
+			Material mat = objs [currentCodeLen].GetComponent<Renderer> ().material;
+			//Debug.Log ("BBBBBBB, currentCodeLen=" + currentCodeLen + ", current color=" + color + ", true color=" + combination [currentCodeLen]);
+//			if (currentCodeLen == 2 && color != combination[currentCodeLen]) {
+//				mat.SetColor ("_EmissionColor", Color.blue);
+//				//Debug.Log ("CCCCCCCCCCC, last object");
+//			}
+			if (color == combination [currentCodeLen]) {
+				mat.SetColor ("_EmissionColor", lightRightColor);
+				//Debug.Log ("AAAAAAAAAAAA, Set color Right");
+			} else {
+				mat.SetColor ("_EmissionColor", lightWrongColor);
+				//Debug.Log ("AAAAAAAAAAAA, Set color wrong");
+			}
 			current [currentCodeLen++] = color;
 		}
 	}
