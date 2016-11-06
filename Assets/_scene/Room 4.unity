@@ -12198,7 +12198,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
+  m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &459039186
 MeshFilter:
@@ -13871,7 +13871,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
+  m_Convex: 0
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &515218163
 MeshFilter:
@@ -25893,7 +25893,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013506046490, guid: dfc0b6a770ca249428cc63a9e09a3a98, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.078
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000013506046490, guid: dfc0b6a770ca249428cc63a9e09a3a98, type: 2}
       propertyPath: m_LocalPosition.z
