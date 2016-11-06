@@ -16,8 +16,8 @@ public class CombinationShow : MonoBehaviour {
 	 */
 
 	public float readyTime = 1.5f;
-	public float showTextTime = 1.5f;
-	public float intervalTime = 0.5f;
+	public float showTextTime = 2.0f;
+	public float intervalTime = 2.0f;
 	public float endTime = 0.5f;
 
 
@@ -106,8 +106,8 @@ public class CombinationShow : MonoBehaviour {
 				return;
 			} else {
 				Debug.Log ("Wrong");
-				currentTimer = -1;
-				currentState = -1;
+				//currentTimer = -1;
+				//currentState = -1;
 			}
 		}
 
