@@ -29493,6 +29493,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014274822026, guid: 81b7c9f6e4bb542bc9737bf03468dd5b, type: 2}
+      propertyPath: m_Name
+      value: Small_roof_lamp_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011649270188, guid: 81b7c9f6e4bb542bc9737bf03468dd5b, type: 2}
+      propertyPath: m_Name
+      value: Small_roof_lamp_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013411150008, guid: 81b7c9f6e4bb542bc9737bf03468dd5b, type: 2}
+      propertyPath: m_Name
+      value: Small_roof_lamp_2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 81b7c9f6e4bb542bc9737bf03468dd5b, type: 2}
   m_IsPrefabParent: 0

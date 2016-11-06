@@ -190,12 +190,9 @@ public class CombinationShow : MonoBehaviour {
 
 	public void inputCode(int color) {
 		if (!complete && currentCodeLen < combinationLength) {
-			Material mat = objs [currentCodeLen].GetComponent<Renderer> ().material;
+			GameObject.Find ("Small_roof_lamp_" + currentCodeLen);
+			Material mat = GameObject.Find ("Small_roof_lamp_" + currentCodeLen).GetComponent<Renderer> ().material;
 			//Debug.Log ("BBBBBBB, currentCodeLen=" + currentCodeLen + ", current color=" + color + ", true color=" + combination [currentCodeLen]);
-//			if (currentCodeLen == 2 && color != combination[currentCodeLen]) {
-//				mat.SetColor ("_EmissionColor", Color.blue);
-//				//Debug.Log ("CCCCCCCCCCC, last object");
-//			}
 			if (color == combination [currentCodeLen]) {
 				mat.SetColor ("_EmissionColor", lightRightColor);
 				//Debug.Log ("AAAAAAAAAAAA, Set color Right");
