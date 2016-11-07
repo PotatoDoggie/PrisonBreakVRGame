@@ -8,8 +8,8 @@ public class DoorHandle : VRTK_InteractableObject {
 	private bool rightDoorOpen;
 	private GameObject leftDoor;
 	private GameObject rightDoor;
-	private Vector3 oldPositionLeft;
-	private Vector3 oldPositionRight;
+	//private Vector3 oldPositionLeft;
+	//private Vector3 oldPositionRight;
 
 	protected override void Start() {
 		base.Start ();
@@ -19,8 +19,8 @@ public class DoorHandle : VRTK_InteractableObject {
 		rightDoorOpen = false;
 		leftDoor = GameObject.Find ("LeftDoor");
 		rightDoor = GameObject.Find ("RightDoor");
-		oldPositionLeft = leftDoor.transform.rotation.eulerAngles;
-		oldPositionRight = rightDoor.transform.rotation.eulerAngles;
+		//oldPositionLeft = leftDoor.transform.rotation.eulerAngles;
+		//oldPositionRight = rightDoor.transform.rotation.eulerAngles;
 	}
 		
 	public override void StartUsing(GameObject usingObject)
@@ -37,7 +37,7 @@ public class DoorHandle : VRTK_InteractableObject {
 					leftDoor.transform.Rotate (new Vector3 (0, -90, 0));
 				} else {
 					leftDoorOpen = false;
-					leftDoor.transform.Rotate (oldPositionLeft);
+					leftDoor.transform.Rotate (new Vector3(0, 90, 0));
 				}
 
 			}
@@ -47,7 +47,7 @@ public class DoorHandle : VRTK_InteractableObject {
 					rightDoor.transform.Rotate (new Vector3 (0, 90, 0));
 				} else {
 					rightDoorOpen = false;
-					rightDoor.transform.Rotate (oldPositionRight);
+					rightDoor.transform.Rotate (new Vector3 (0, -90, 0));
 				}
 			}
 		}
