@@ -18,6 +18,8 @@ TagManager:
   - ElectricSpark
   - HealthyWire
   - KeypadText
+  - LightIndicator
+  - Key_Hole
   layers:
   - Default
   - TransparentFX
