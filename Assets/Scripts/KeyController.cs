@@ -12,6 +12,7 @@
         private Rigidbody rb;
         private VRTK_InteractableObject keyInteractor;
 		private TextMesh tm;
+		private bool isOpen;
         // Use this for initialization
         void Start()
         {
@@ -19,6 +20,7 @@
             keyInteractor = GetComponent<VRTK_InteractableObject>();
 			tm = GameObject.Find ("Attention").GetComponent<TextMesh> ();
 			objs = GameObject.FindGameObjectsWithTag ("ElectricSpark");
+			isOpen = false;
         }
 
         void Update()
@@ -46,8 +48,9 @@
         }
         void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.CompareTag("KeyHole"))
+			if (other.gameObject.CompareTag("KeyHole") && isOpen == false)
             {
+				isOpen = true;
                 GameObject doorLeft = GameObject.FindGameObjectWithTag("DoorLeft");
                 GameObject doorRight = GameObject.FindGameObjectWithTag("DoorRight");
                 doorLeft.transform.Rotate(new Vector3(0, 90, 0));
