@@ -101,6 +101,7 @@ GameObject:
   - 33: {fileID: 25592246}
   - 23: {fileID: 25592245}
   - 64: {fileID: 25592244}
+  - 114: {fileID: 25592247}
   m_Layer: 18
   m_Name: PrisonInsideWallOne
   m_TagString: Untagged
@@ -172,6 +173,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 25592242}
   m_Mesh: {fileID: 4300000, guid: d23590a6bd5642f4a9a7faa383b26e3a, type: 3}
+--- !u!114 &25592247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 25592242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &125660978
 Mesh:
   m_ObjectHideFlags: 0
@@ -636,6 +648,21 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6206ab426ae73a49a607440b8d5f8e3, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &343375582 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 128412, guid: a6206ab426ae73a49a607440b8d5f8e3, type: 2}
+  m_PrefabInternal: {fileID: 343375581}
+--- !u!114 &343375583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 343375582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &407389129
 Prefab:
   m_ObjectHideFlags: 0
@@ -707,6 +734,17 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100070, guid: 20ced714a695a644bb902a2c18b1fbcc, type: 2}
   m_PrefabInternal: {fileID: 1699961208}
+--- !u!114 &427325453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427325452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &427325454
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -775,6 +813,17 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100036, guid: 20ced714a695a644bb902a2c18b1fbcc, type: 2}
   m_PrefabInternal: {fileID: 1699961208}
+--- !u!114 &511003862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 511003861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &511003863
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1029,6 +1078,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc7ce719ae7d94a7b8c41afcd84803fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &548244055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548244050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &560673747 stripped
@@ -1484,6 +1544,17 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100038, guid: 20ced714a695a644bb902a2c18b1fbcc, type: 2}
   m_PrefabInternal: {fileID: 1699961208}
+--- !u!114 &702556605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 702556604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &702556606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1537,6 +1608,7 @@ GameObject:
   - 33: {fileID: 782370483}
   - 23: {fileID: 782370482}
   - 64: {fileID: 782370481}
+  - 114: {fileID: 782370484}
   m_Layer: 18
   m_Name: PrisonInsideWallOne
   m_TagString: Untagged
@@ -1608,6 +1680,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 782370479}
   m_Mesh: {fileID: 4300000, guid: d23590a6bd5642f4a9a7faa383b26e3a, type: 3}
+--- !u!114 &782370484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782370479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &790198549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,6 +1819,7 @@ GameObject:
   - 23: {fileID: 924457051}
   - 64: {fileID: 924457050}
   - 54: {fileID: 924457054}
+  - 114: {fileID: 924457053}
   m_Layer: 18
   m_Name: CellShelf
   m_TagString: Untagged
@@ -1811,6 +1895,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 924457048}
   m_Mesh: {fileID: 4300000, guid: 70c9dd8a33bd87941a5901ea7f17772b, type: 3}
+--- !u!114 &924457053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 924457048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &924457054
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1900,6 +1995,7 @@ GameObject:
   - 33: {fileID: 946448559}
   - 23: {fileID: 946448558}
   - 64: {fileID: 946448557}
+  - 114: {fileID: 946448560}
   m_Layer: 18
   m_Name: PrisonOutsidePiller
   m_TagString: Untagged
@@ -1971,6 +2067,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 946448555}
   m_Mesh: {fileID: 4300000, guid: 262931d0ce5b2d44a9ffe959397975d4, type: 3}
+--- !u!114 &946448560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 946448555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &995676971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,6 +2089,7 @@ GameObject:
   - 33: {fileID: 995676975}
   - 23: {fileID: 995676974}
   - 64: {fileID: 995676973}
+  - 114: {fileID: 995676976}
   m_Layer: 18
   m_Name: CellWallOutside
   m_TagString: Untagged
@@ -2053,6 +2161,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 995676971}
   m_Mesh: {fileID: 4300000, guid: 78acef6646eb10342a721349467886dd, type: 3}
+--- !u!114 &995676976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 995676971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1024011297
 Prefab:
   m_ObjectHideFlags: 0
@@ -2850,6 +2969,7 @@ GameObject:
   - 23: {fileID: 1278505775}
   - 64: {fileID: 1278505774}
   - 54: {fileID: 1278505777}
+  - 114: {fileID: 1278505778}
   m_Layer: 18
   m_Name: CellToilet
   m_TagString: Untagged
@@ -2936,6 +3056,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1278505778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1278505772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1311890381
 Prefab:
   m_ObjectHideFlags: 0
@@ -3476,6 +3607,17 @@ Material:
 GameObject:
   m_PrefabParentObject: {fileID: 100048, guid: 20ced714a695a644bb902a2c18b1fbcc, type: 2}
   m_PrefabInternal: {fileID: 1699961208}
+--- !u!114 &1637498297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1637498296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &1637498298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3840,6 +3982,52 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08136367, y: 1.9000001, z: 1.0000037}
   m_Center: {x: 0.040684078, y: 0.95000005, z: 0.50000364}
+--- !u!1 &1699961216 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014027526050, guid: 20ced714a695a644bb902a2c18b1fbcc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1699961208}
+--- !u!114 &1699961217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1699961216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1699961218 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 187314, guid: 20ced714a695a644bb902a2c18b1fbcc, type: 2}
+  m_PrefabInternal: {fileID: 1699961208}
+--- !u!1 &1699961219 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 120966, guid: 20ced714a695a644bb902a2c18b1fbcc, type: 2}
+  m_PrefabInternal: {fileID: 1699961208}
+--- !u!114 &1699961220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1699961218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1699961221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1699961219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1723731053
 GameObject:
   m_ObjectHideFlags: 0
@@ -4567,6 +4755,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1977423135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1977423131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1981850268 stripped
 Transform:
   m_PrefabParentObject: {fileID: 453690, guid: a6206ab426ae73a49a607440b8d5f8e3, type: 2}
@@ -4665,6 +4864,7 @@ GameObject:
   - 33: {fileID: 2106174026}
   - 23: {fileID: 2106174025}
   - 64: {fileID: 2106174024}
+  - 114: {fileID: 2106174027}
   m_Layer: 18
   m_Name: CellLight
   m_TagString: Untagged
@@ -4737,6 +4937,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2106174022}
   m_Mesh: {fileID: 4300000, guid: 7c0eafc07de39f34489016bedd2e18be, type: 3}
+--- !u!114 &2106174027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106174022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c09d289a68da44aa1c080e4efab43e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2143760404
 Prefab:
   m_ObjectHideFlags: 0
