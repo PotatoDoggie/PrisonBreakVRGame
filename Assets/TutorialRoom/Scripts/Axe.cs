@@ -12,7 +12,9 @@ public class Axe : MonoBehaviour {
 	}
 	
 	void onTriggerEnter(Collider other) {
+		Debug.Log (other.gameObject.name);
 		if (other.gameObject.name.Equals ("Door") || other.gameObject.name.Equals ("DoorHandle")) {
+			//Debug.Log (other.gameObject.name);
 			collisionTimes--;
 			if (collisionTimes == 0) {
 				door.transform.Rotate (new Vector3 (0, 45, 0));
