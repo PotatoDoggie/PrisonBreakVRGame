@@ -10,9 +10,7 @@ public class SwitchLever : MonoBehaviour {
 	void Start () {
 		prisondoorOpen = false;
 		obj = GameObject.Find ("PrisonGateSingleDoor");
-		//oldPosition = new Vector3(0.25f, 0, -0.025f);
 		oldPosition = obj.transform.position;
-		//Debug.Log (oldPosition.x + " " + oldPosition.y + " " + oldPosition.z);
 		GetComponent<VRTK_Control>().defaultEvents.OnValueChanged.AddListener(HandleChange);
 		HandleChange(GetComponent<VRTK_Control>().GetValue(), GetComponent<VRTK_Control>().GetNormalizedValue());
 	}
