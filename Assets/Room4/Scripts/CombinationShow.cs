@@ -29,6 +29,10 @@ public class CombinationShow : MonoBehaviour {
 	public SceneSwitchDoor sceneSwitchDoor;
 
 
+	public AudioClip soundWrong;
+	public AudioClip soundCorrect;
+
+
 	private Animator doorAnimator;
 
 	private float currentTimer;
@@ -51,6 +55,8 @@ public class CombinationShow : MonoBehaviour {
 	private Color lightRightColor;
 	private Color lightWrongColor;
 
+	private AudioSource audioSource;
+
 	// Use this for initialization
 	void Start () {
 		doorAnimator = door.GetComponent<Animator> ();
@@ -70,6 +76,8 @@ public class CombinationShow : MonoBehaviour {
 		lightOriginalColor = Color.black;
 		lightRightColor = Color.green;
 		lightWrongColor = Color.red;
+
+		audioSource = GameObject.Find("/MainAudioSource").GetComponent<AudioSource> ();
 
 	}
 	
@@ -97,6 +105,7 @@ public class CombinationShow : MonoBehaviour {
 			Debug.Log ("Code complete, comparing...");
 			if (current.SequenceEqual (combination)) {
 				Debug.Log ("Correct, open the door");
+				audioSource.PlayOneShot (soundCorrect, 1.0f);
 				doorAnimator.SetTrigger ("DoorOpen");
 				gameObject.SetActive (false);
 				sceneSwitchDoor.isUsable = true;
@@ -105,6 +114,7 @@ public class CombinationShow : MonoBehaviour {
 				complete = true;
 				return;
 			} else {
+				audioSource.PlayOneShot (soundWrong, 1.0f);
 				Debug.Log ("Wrong");
 				//currentTimer = -1;
 				//currentState = -1;

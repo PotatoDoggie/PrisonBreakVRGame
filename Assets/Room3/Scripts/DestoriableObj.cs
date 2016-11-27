@@ -4,18 +4,22 @@ using System.Collections;
 public class DestoriableObj : MonoBehaviour {
 
     public GameObject dropWhenDestried;
+	public AudioClip balloonPop;
+
+	private AudioSource audioSource;
     // Use this for initialization
     void Start()
     {
         if (dropWhenDestried != null) {
             dropInitial(dropWhenDestried);
         }
-
+		audioSource = GameObject.Find("/MainAudioSource").GetComponent<AudioSource> ();
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Arrow")) {
+			audioSource.PlayOneShot (balloonPop, 1.0f);
             if (dropWhenDestried != null)
             {
                 dropItem(dropWhenDestried);
