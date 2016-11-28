@@ -19,7 +19,7 @@ public class Axe : MonoBehaviour {
 				door.transform.Rotate (new Vector3 (0, 45, 0));
 				SteamVR_Fade.Start(Color.black, 0);
 				SteamVR_Fade.Start(Color.clear, 5);
-				SceneManager.LoadScene(0);
+				SceneManager.LoadScene(1);
 			}
 		}
 	}
