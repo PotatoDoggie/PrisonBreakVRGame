@@ -36,7 +36,7 @@ public class KeypadController : VRTK_InteractableObject
             {
                 SteamVR_Fade.Start(Color.black, 0);
                 SteamVR_Fade.Start(Color.clear, 5);
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(3);
             }
         }
     }
