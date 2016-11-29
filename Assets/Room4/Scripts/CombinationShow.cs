@@ -84,11 +84,10 @@ public class CombinationShow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 //		if (Input.GetKeyDown ("q")) {
-//			//targetAnimator.SetTrigger ("ShootingTargetDown");
-//			inputCode (0);
+//			audioSource.PlayOneShot (soundCorrect, 1.0f);
 //		} 
 //		if (Input.GetKeyDown ("w")) {
-//			inputCode (1);
+//			audioSource.PlayOneShot (soundWrong, 1.0f);
 //		} 
 //		if (Input.GetKeyDown ("e")) {
 //			inputCode (2);
