@@ -16323,6 +16323,7 @@ MonoBehaviour:
   hideControllerOnUse: 0
   usingState: 0
   rotateCamera: {fileID: 447992365}
+  switchsound: {fileID: 8300000, guid: 2f52e6caa342f4bb79913535a6ef045b, type: 3}
 --- !u!1001 &598090088
 Prefab:
   m_ObjectHideFlags: 0
