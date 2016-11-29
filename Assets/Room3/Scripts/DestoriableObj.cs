@@ -15,7 +15,11 @@ public class DestoriableObj : MonoBehaviour {
         }
 		audioSource = GameObject.Find("/MainAudioSource").GetComponent<AudioSource> ();
     }
-
+//	void Update() {
+//		if (Input.GetKeyDown ("a")) {
+//			audioSource.PlayOneShot (balloonPop, 1.0f);
+//		}
+//	}
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Arrow")) {
