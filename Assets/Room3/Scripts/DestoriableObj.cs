@@ -13,7 +13,7 @@ public class DestoriableObj : MonoBehaviour {
         if (dropWhenDestried != null) {
             dropInitial(dropWhenDestried);
         }
-		audioSource = GameObject.Find("/MainAudioSource").GetComponent<AudioSource> ();
+		//audioSource = GameObject.Find("/MainAudioSource").GetComponent<AudioSource> ();
     }
 //	void Update() {
 //		if (Input.GetKeyDown ("a")) {
@@ -23,7 +23,8 @@ public class DestoriableObj : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Arrow")) {
-			audioSource.PlayOneShot (balloonPop, 1.0f);
+			GameObject.Find ("Balloon").GetComponent<AudioSource> ().Play ();
+			//audioSource.PlayOneShot (balloonPop, 1.0f);
             if (dropWhenDestried != null)
             {
                 dropItem(dropWhenDestried);
