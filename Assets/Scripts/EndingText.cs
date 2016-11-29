@@ -8,7 +8,7 @@ public class EndingText : MonoBehaviour {
 	private GameObject memberText;
 	private bool text1RiseTop = false;
 	private bool text2RiseTop = false;
-	private float speed = 0.8f;
+	private float speed = 0.5f;
 	private Vector3 curPosition1;
 	private Vector3 curPosition2;
 	// Use this for initialization
