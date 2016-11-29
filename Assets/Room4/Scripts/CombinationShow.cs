@@ -32,7 +32,6 @@ public class CombinationShow : MonoBehaviour {
 	public AudioClip soundWrong;
 	public AudioClip soundCorrect;
 
-
 	private Animator doorAnimator;
 
 	private float currentTimer;
@@ -83,15 +82,15 @@ public class CombinationShow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-//		if (Input.GetKeyDown ("q")) {
-//			audioSource.PlayOneShot (soundCorrect, 1.0f);
-//		} 
-//		if (Input.GetKeyDown ("w")) {
-//			audioSource.PlayOneShot (soundWrong, 1.0f);
-//		} 
-//		if (Input.GetKeyDown ("e")) {
-//			inputCode (2);
-//		} 
+		if (Input.GetKeyDown ("q")) {
+			audioSource.PlayOneShot (soundCorrect, 1.0f);
+		} 
+		if (Input.GetKeyDown ("w")) {
+			audioSource.PlayOneShot (soundWrong, 1.0f);
+		} 
+		if (Input.GetKeyDown ("e")) {
+			GameObject.Find ("PrisonGateSingleDoor").GetComponent<AudioSource> ().Play ();
+		} 
 //		if (Input.GetKeyDown ("r")) {
 //			inputCode (3);
 //		}
@@ -108,7 +107,7 @@ public class CombinationShow : MonoBehaviour {
 				doorAnimator.SetTrigger ("DoorOpen");
 				gameObject.SetActive (false);
 				sceneSwitchDoor.isUsable = true;
-
+				GameObject.Find ("PrisonGateSingleDoor").GetComponent<AudioSource> ().Play ();
 				//sceneSwitchDoor.highlightOnTouch = true;
 				complete = true;
 				return;
