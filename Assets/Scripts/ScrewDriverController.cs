@@ -3,12 +3,10 @@ using System.Collections;
 
 public class ScrewDriverController : MonoBehaviour {
 
-	private Rigidbody rb;
 	private int count;
 
 	// Use this for initialization
 	void Start () {
-		rb = GetComponent<Rigidbody> ();
 		count = 0;
 	}
 	
@@ -16,8 +14,10 @@ public class ScrewDriverController : MonoBehaviour {
 		if (other.gameObject.CompareTag ("ScrewHead")) {
 			other.gameObject.SetActive (false);
 			count++;
+			GameObject.Find ("PrisonElectricalPanel").GetComponents<AudioSource> () [1].Play ();
             Debug.Log("Count" + count);
 			if (count >= 4) {
+				GameObject.Find ("PrisonElectricalPanel").GetComponents<AudioSource> () [1].Play ();
 				GameObject electricPanelDoor = GameObject.Find ("ElectricalPanelDoor");
 				Rigidbody rb1 = electricPanelDoor.GetComponent<Rigidbody>();
 				rb1.isKinematic = false;

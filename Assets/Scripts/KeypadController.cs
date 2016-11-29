@@ -58,6 +58,7 @@ public class KeypadController : VRTK_InteractableObject
         {
             if (!doorOpen)
             {
+				GameObject.Find ("Keypad").GetComponents<AudioSource> () [2].Play ();
                 if (name.Equals("Cube_0"))
                 {
                     input += "0";
@@ -118,6 +119,7 @@ public class KeypadController : VRTK_InteractableObject
                 {
                     if (input.Equals(curPassword))
                     {
+						GameObject.Find ("Keypad").GetComponents<AudioSource> () [1].Play ();
                         doorOpen = true;
                         door.GetComponent<DoorController>().doorOpen = doorOpen;
                         input = "";
@@ -125,6 +127,7 @@ public class KeypadController : VRTK_InteractableObject
                     }
                     else
                     {
+						GameObject.Find ("Keypad").GetComponents<AudioSource> () [0].Play ();
                         input = "";
                         tm.text = "Password Wrong!";
                     }
