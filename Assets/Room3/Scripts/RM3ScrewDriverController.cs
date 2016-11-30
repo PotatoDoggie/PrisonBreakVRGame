@@ -16,8 +16,10 @@ public class RM3ScrewDriverController : MonoBehaviour {
 		if (other.gameObject.CompareTag ("ScrewHead")) {
 			other.gameObject.SetActive (false);
 			count++;
+			GameObject.Find ("PrisonElectricalPanel").GetComponent<AudioSource> ().Play ();
             Debug.Log("Count" + count);
 			if (count >= 4) {
+				GameObject.Find ("PrisonElectricalPanel").GetComponent<AudioSource> ().Play ();
 				GameObject electricPanelDoor = GameObject.Find ("ElectricalPanelDoor");
 				Rigidbody rb1 = electricPanelDoor.GetComponent<Rigidbody>();
 				rb1.isKinematic = false;

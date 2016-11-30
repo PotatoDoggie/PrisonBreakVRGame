@@ -16,7 +16,7 @@ public class LeverReactor : MonoBehaviour {
 
     private void HandleChange(float value, float normalizedValue)
     {
-
+		GameObject.Find ("Lever").GetComponent<AudioSource> ().Play ();
         if (normalizedValue > 60)
         {
 			go.text = "ON";
