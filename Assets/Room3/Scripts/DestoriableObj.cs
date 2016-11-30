@@ -23,7 +23,7 @@ public class DestoriableObj : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Arrow")) {
-			GameObject.Find ("Balloon").GetComponent<AudioSource> ().Play ();
+			GameObject.Find ("Balloons").GetComponent<AudioSource> ().Play ();
 			//audioSource.PlayOneShot (balloonPop, 1.0f);
             if (dropWhenDestried != null)
             {
