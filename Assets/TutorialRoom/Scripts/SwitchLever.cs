@@ -19,10 +19,13 @@ public class SwitchLever : MonoBehaviour {
 	{
 		if (normalizedValue > 60)
 		{
+			GameObject.Find ("Lever").GetComponent<AudioSource> ().Play ();
+			GameObject.Find ("PrisonGateSingleDoor").GetComponent<AudioSource> ().Play ();
 			prisondoorOpen = true;
 			obj.transform.position = new Vector3 (oldPosition.x, oldPosition.y + 2.0f, oldPosition.z);
 		}
 		else {
+			GameObject.Find ("Lever").GetComponent<AudioSource> ().Play ();
 			prisondoorOpen = false;
 			obj.transform.position = oldPosition;
 		}

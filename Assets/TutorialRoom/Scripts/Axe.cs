@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class Axe : MonoBehaviour {
-	private int collisionTimes = 1;
+	private int collisionTimes = 2;
 	GameObject door;
 	GameObject doorHandle;
 	// Use this for initialization
